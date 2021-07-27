@@ -2,7 +2,7 @@ module.exports = {
   title: "Hackney API Specifications",
   tagline:
     "A guide on Hackney's development practices, and how to follow them",
-  url: "https://lbhackney-it.github.io/api-specifications",
+  url: "https://lbhackney-it.github.io/api-specs",
   baseUrl: "/api-specifications/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -21,7 +21,7 @@ module.exports = {
       },
       items: [
         {
-          href: "https://github.com/LBHackney-IT/api-specifications",
+          href: "https://github.com/LBHackney-IT/api-specs",
           label: "GitHub",
           position: "right",
         },
@@ -45,7 +45,7 @@ module.exports = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/LBHackney-IT/api-specifications/edit/master/",
+          editUrl: "https://github.com/LBHackney-IT/api-specs/edit/master/",
         },
         theme: {
           customCss: [require.resolve("./src/docs.scss")],
