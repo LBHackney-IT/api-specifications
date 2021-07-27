@@ -8,7 +8,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Specifications',
-      items: ['person-api'],
+      items: ['person-api', 'activities_api'],
     }
   ]
 };
