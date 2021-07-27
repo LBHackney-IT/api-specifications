@@ -2,13 +2,13 @@ module.exports = {
   title: "Hackney API Specifications",
   tagline:
     "A guide on Hackney's development practices, and how to follow them",
-  url: "https://lbhackney-it.github.io/api-specs",
-  baseUrl: "/api-specifications/",
+  url: "https://lbhspreston.github.io/api-specs",
+  baseUrl: "/api-specs/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
-  organizationName: "lbhackney-it",
-  projectName: "api-specifications",
+  organizationName: "lbhspreston",
+  projectName: "api-specs",
   themeConfig: {
     prism: {
       additionalLanguages: ["csharp"],
@@ -21,7 +21,7 @@ module.exports = {
       },
       items: [
         {
-          href: "https://github.com/LBHackney-IT/api-specs",
+          href: "https://github.com/LBHSPreston/api-specs",
           label: "GitHub",
           position: "right",
         },
@@ -45,7 +45,7 @@ module.exports = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/LBHackney-IT/api-specs/edit/master/",
+          editUrl: "https://github.com/LBHSPreston/api-specs/edit/master/",
         },
         theme: {
           customCss: [require.resolve("./src/docs.scss")],
