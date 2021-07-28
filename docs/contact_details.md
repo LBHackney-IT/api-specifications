@@ -1,6 +1,6 @@
 ---
 id: contact_details
-title: Contact Details API Specifications
+title: Contact Details API
 ---
 
 ## Purpose
