@@ -3,7 +3,8 @@ id: notes
 title: Notes API
 
 ---
-## Purpose
+## Purpose
+
 To identify all information to be captured with regards to the Notes domain.
 
 As we think that the Notes can be used as a reusable component between all three streams (Finance, Tenants & Leaseholders,Repairs) of MTHF and possibly other datasets as well as it is only meant to create and retrieve all activities against the entity in need.
@@ -22,7 +23,7 @@ We are also proposing further classification of Notes as private and public note
 
 ## Our users and their needs
 
-** As a service user I would like to see the Notes so that **
+** As a service user I would like to see the Notes so that: **
 - I have detailed heading to understand what the notes is about
 - I am aware of the timestamp
 - I need to know the author of a note
@@ -31,17 +32,16 @@ We are also proposing further classification of Notes as private and public note
 - I can use documents attached to the record for more detail (detail can be provided of where the document is stored)
 
 
-** As a consumer I need to have an API specification (e.g. Swagger doc, README), so that **
+** As a consumer I need to have an API specification (e.g. Swagger doc, README), so that: **
 - I can have a clear understanding of the endpoints which are available
 - I know what the requests and responses should look like
+- I need to be able to query for an individual notes record or list notes records so that I can use the information as per the service needed in question.
 
-As a consumer I need to be able to query for an individual notes record or list notes records so that I can use the information as per the service needed in question.
-
-** As a consumer I would like to have the option for paginated results so that **
+** As a consumer I would like to have the option for paginated results so that: **
 - The query duration doesn’t impact the performance of the frontend negatively.
 - I can set the page size for large results
 
-** As a developer I need to create an API specification so that **
+** As a developer I need to create an API specification so that: **
 - I can provide clear documentation about endpoints and payloads, etc.
 - I need to be notified when errors occur and have visibility of errors (e.g logs) and issues on the API, so that I can fix them as soon as possible.
 -  I need to make sure that access to the API is secure so that only authorised users can make requests to this API.
@@ -53,7 +53,7 @@ endpoints are relevant
 ** As an application  support analyst **
  - I need to understand the queries being used by the API so that I can deal with support requests accordingly and resolve the potential issues in the underlying data.
 
-** As a data analyst I need to connect to the API via Qlik so that **
+** As a data analyst I need to connect to the API via Qlik so that: **
 - Data is easy to interpret and available for further reporting purposes.
 
 # Workshop outcome

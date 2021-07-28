@@ -8,7 +8,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Specifications',
-      items: ['person-api', 'activities_api', 'asset_info', 'configuration', 'contact_details', 'housing_search', 'notes'],
+      items: ['person-api', 'activities_api', 'asset_info', 'configuration', 'contact_details', 'housing_search', 'notes', 'organisations'],
     }
   ]
 };
