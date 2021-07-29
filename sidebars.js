@@ -8,9 +8,9 @@ module.exports = {
     {
       type: 'category',
       label: 'Specifications',
-      items: ['person-api', 'activities_api', 'asset_info', 'configuration',
+      items: ['activities_api', 'asset_info', 'configuration',
               'contact_details', 'housing_search', 'notes', 'organisations',
-              'search_api', 'tenure_api'],
+              'person-api', 'search_api', 'tenure_api',],
     }
   ]
 };
