@@ -3,7 +3,7 @@ id: person-api
 title: Person API
 ---
 
-## Purpose:
+## Purpose
 To identify all information to be captured with regards to the Core Person domain.
 
 As one of the core entities for all interactions with the council, we understand that the Person entity had to be brainstormed thoroughly between all three streams of MFTH( as the starting point of conversation for a single view for person related data).
