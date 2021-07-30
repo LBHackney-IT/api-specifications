@@ -102,7 +102,7 @@ Endpoint URL:
 - get/tenures/?firstname
 - get/tenures/?lastname
 - get/tenures/?postcode
-- get/tenures/{id}
+- get/tenures/{tenureid}
 
 ** Request Query String parameters: **
 
@@ -126,7 +126,9 @@ If item was not found
 ** Post Tenures: **
 
 Purpose: Created one or more tenures
-- Endpoint URL: tenures/{id}
+- Endpoint URL: tenures/{tenureid}
+Purpose: Add a person to a tenure
+- Endpoint URL: tenures/{tenureid}/person{personid}
 
 ** Request post object: **
 - TO BE ADDED
@@ -140,7 +142,7 @@ Purpose: Created one or more tenures
 
 Purpose: Update one of more tenures
 Endpoints URL:
-            tenures/{id}
+            tenures/{tenureid}
 
 ** Request Put object: **
 - TO BE ADDED
