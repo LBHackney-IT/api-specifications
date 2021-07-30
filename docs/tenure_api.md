@@ -144,7 +144,6 @@ Purpose: Add a person to a tenure
 
 ** Response: **
 - 201
-- Note created
 ![API](./doc-images/spec43.png)
 
 ** Patch tenures: **
