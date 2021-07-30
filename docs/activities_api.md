@@ -3,7 +3,8 @@ id: activities_api
 title: Activities API
 ---
 
-## Purpose:
+## Purpose
+
 To identify all information to be captured with regards to the Activities(Record logging) domain.
 As one of the core entities for all interactions with the council, we understand that the Activities is an entity which is common between all three streams (Finance, Tenants & Leaseholders,Repairs) of MTHF and possibly other datasets as well as it is only meant to log all activities against the entity in need.
 
@@ -66,7 +67,7 @@ endpoints are relevant;
 # Workshop outcome
 ## Workshop 1
 
-Summary
+** Summary **
 
 The workshop was based on identifying different sources that might contribute towards the Activities API. As activities are not representing the complete history against the entity and each dataset has their own wrapper around the activities model it will be best if we have a single repository to handle all activities with filters based on the domain and entities we are dealing with.
 
@@ -93,7 +94,7 @@ Endpoint URL:
 
                   Method: GET (list, search, view)
 
-Request Querystring Parameters:
+** Request Querystring Parameters:**
 
 - Author - specifies the author of the notes
 - Author ID
