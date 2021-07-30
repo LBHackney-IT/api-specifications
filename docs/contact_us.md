@@ -16,6 +16,8 @@ title: Contact Our Development Team
 
 - ** Tuomo Karki ** [tuomo.karki@hackney.gov.uk] - Lead Developer
 
+- ** Dave Dean ** [dave.dean@hackney.gov.uk] - Lead Developer
+
 - ** Livia Basiu ** [livia.basiu@hackney.gov.uk] - Maintainer and Collaborator
 
 - ** Atiyyah Rawat ** [atiyyah.rawat@hackney.gov.uk]- Maintainer and Collaborator
