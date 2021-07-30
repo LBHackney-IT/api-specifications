@@ -11,6 +11,11 @@ module.exports = {
       items: ['activities_api', 'asset_info', 'configuration',
               'contact_details', 'housing_search', 'notes', 'organisations',
               'person-api', 'search_api', 'tenure_api',],
-    }
+    },
+    {
+      type: 'category',
+      label: 'Contact Us',
+      items: ['contact_us'],
+    },
   ]
 };
