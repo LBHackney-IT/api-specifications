@@ -132,10 +132,9 @@ Purpose: Created one or more tenures
 Purpose: Add a person to a tenure
 - Endpoint URL: tenures/{tenureid}/person/{personid}
 
-** Request post object: **
+**Request post object:**
 
     {
-        "id": "2f5fe30f-f64e-41c6-b348-10c1f67448b4",
         "type": "Person",
         "fullName": "Person Full Name",
         "isResponsible": true,
