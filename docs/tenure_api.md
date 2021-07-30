@@ -128,7 +128,7 @@ If item was not found
 Purpose: Created one or more tenures
 - Endpoint URL: tenures/{tenureid}
 Purpose: Add a person to a tenure
-- Endpoint URL: tenures/{tenureid}/person{personid}
+- Endpoint URL: tenures/{tenureid}/person/{personid}
 
 ** Request post object: **
 - TO BE ADDED
