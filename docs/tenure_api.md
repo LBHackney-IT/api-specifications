@@ -4,6 +4,8 @@ title: Tenure API
 ---
 ## Purpose
 
+test
+
 The housing tenure describes the legal status under which people/organizations have the right to occupy their accommodation.
  In UH we had different types of tenure such as tenancy agreements, Licences for temporary accommodation,Leasehold agreements,freehold and shared ownership. We have identified that the tenure entity is important for all processes related to most processes within the housing domain such as Manage a Tenancy,Manage arrears,service charge etc.
 
@@ -12,6 +14,8 @@ As part of our solution, we are proposing to develop the first version of this s
 Our goal is to ensure we build reusable components as part of the MTFH stream and thereby extending to other domains if they need similar information. This will enable us to eliminate the silos mechanism for asset information collection and help us to present a single view on it which will also help us to reduce the future development cost and yield a better ROI.
 
 ## Vision
+
+test testing branch
 
 - A single, centralized data source, holding all core tenure data, updated by multiple services.
 - A reusable microservice API used for managing that data.
@@ -166,4 +170,4 @@ Not found
 - Document issue -  which is the process of success/fail prior to application
 - Tenure Application details
 - List of invoices (link to invoice ID)
-- Tenure agreements 
+- Tenure agreements
