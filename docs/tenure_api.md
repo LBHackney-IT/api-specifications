@@ -127,11 +127,20 @@ If item was not found
 
 Purpose: Created one or more tenures
 - Endpoint URL: tenures/{tenureid}
+
+
 Purpose: Add a person to a tenure
 - Endpoint URL: tenures/{tenureid}/person/{personid}
 
 ** Request post object: **
-- TO BE ADDED
+    {
+        "id": "2f5fe30f-f64e-41c6-b348-10c1f67448b4",
+        "type": "Person",
+        "fullName": "Person Full Name",
+        "isResponsible": true,
+        "dateOfBirth": "1951-02-11T00:00:00",
+        "personTenureType": "Tenant|HouseholdMember"
+    }
 
 ** Response: **
 - 201
