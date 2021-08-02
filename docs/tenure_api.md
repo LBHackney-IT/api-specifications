@@ -133,6 +133,11 @@ Purpose: Created one or more tenures
 
 Purpose: Add a person to a tenure
 - Endpoint URL: tenures/{tenureid}/person/{personid}
+- 
+**DELETE Tenures:**
+
+Purpose: Remove a person from tenure
+- Endpoint URL: tenures/{tenureid}/person/{personid}
 
 **Request PATCH object:**
 
