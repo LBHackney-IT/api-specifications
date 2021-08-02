@@ -123,16 +123,18 @@ Endpoint URL:
 If item was not found
 ![API](./doc-images/spec42.png)
 
-** Post Tenures: **
+**POST Tenures:**
 
 Purpose: Created one or more tenures
 - Endpoint URL: tenures/{tenureid}
 
 
+**PATCH Tenures:**
+
 Purpose: Add a person to a tenure
 - Endpoint URL: tenures/{tenureid}/person/{personid}
 
-**Request post object:**
+**Request PATCH object:**
 
     {
         "type": "Person",
