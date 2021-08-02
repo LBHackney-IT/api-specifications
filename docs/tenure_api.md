@@ -125,16 +125,27 @@ If item was not found
 
 **POST Tenures:**
 
-Purpose: Created one or more tenures
+Purpose: Create one or more tenures
 - Endpoint URL: tenures/{tenureid}
 
+**Request object:**
+
+- TO BE ADDED
 
 **PATCH Tenures:**
 
+Purpose: Update one of more tenures
+Endpoints URL: tenures/{tenureid}
+
+**Request object:**
+
+- TO BE ADDED
+
 Purpose: Add a person to a tenure
+
 - Endpoint URL: tenures/{tenureid}/person/{personid}
 
-**Request PATCH object:**
+**Request object:**
 
     {
         "type": "Person",
@@ -143,7 +154,7 @@ Purpose: Add a person to a tenure
         "dateOfBirth": "1951-02-11T00:00:00",
         "personTenureType": "Leaseholder|Freeholder|Tenant|HouseholdMember"
     }
-    
+
 **DELETE Tenures:**
 
 Purpose: Remove a person from tenure
@@ -153,15 +164,6 @@ Purpose: Remove a person from tenure
 ** Response: **
 - 201
 ![API](./doc-images/spec43.png)
-
-** Patch tenures: **
-
-Purpose: Update one of more tenures
-Endpoints URL:
-            tenures/{tenureid}
-
-** Request Put object: **
-- TO BE ADDED
 
 ** Response: **
   - 204
