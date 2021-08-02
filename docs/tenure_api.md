@@ -102,7 +102,7 @@ Endpoint URL:
 - get/tenures/?firstname
 - get/tenures/?lastname
 - get/tenures/?postcode
-- get/tenures/{id}
+- get/tenures/{tenureid}
 
 ** Request Query String parameters: **
 
@@ -123,27 +123,47 @@ Endpoint URL:
 If item was not found
 ![API](./doc-images/spec42.png)
 
-** Post Tenures: **
+**POST Tenures:**
 
-Purpose: Created one or more tenures
-- Endpoint URL: tenures/{id}
+Purpose: Create one or more tenures
+- Endpoint URL: tenures/{tenureid}
 
-** Request post object: **
+**Request object:**
+
 - TO BE ADDED
+
+**PATCH Tenures:**
+
+Purpose: Update one of more tenures
+Endpoints URL: tenures/{tenureid}
+
+**Request object:**
+
+- TO BE ADDED
+
+Purpose: Add a person to a tenure
+
+- Endpoint URL: tenures/{tenureid}/person/{personid}
+
+**Request object:**
+
+    {
+        "type": "Person",
+        "fullName": "Person Full Name",
+        "isResponsible": true,
+        "dateOfBirth": "1951-02-11T00:00:00",
+        "personTenureType": "Leaseholder|Freeholder|Tenant|HouseholdMember"
+    }
+
+**DELETE Tenures:**
+
+Purpose: Remove a person from tenure
+- Endpoint URL: tenures/{tenureid}/person/{personid}
+
 
 ** Response: **
 - 201
-- Note created
 ![API](./doc-images/spec43.png)
-
-** Patch tenures: **
-
-Purpose: Update one of more tenures
-Endpoints URL:
-            tenures/{id}
-
-** Request Put object: **
-- TO BE ADDED
 
 ** Response: **
   - 204
