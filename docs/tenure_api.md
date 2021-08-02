@@ -141,7 +141,7 @@ Purpose: Add a person to a tenure
         "fullName": "Person Full Name",
         "isResponsible": true,
         "dateOfBirth": "1951-02-11T00:00:00",
-        "personTenureType": "Tenant|HouseholdMember"
+        "personTenureType": "Leaseholder|Freeholder|Tenant|HouseholdMember"
     }
 
 ** Response: **
