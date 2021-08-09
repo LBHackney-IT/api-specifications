@@ -185,7 +185,9 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     ```
 
 5. PATCH **/accounts/{id}**
+
     **Function:** Updates a person’s account details
+    
     **Request Payload:**
     ```
     {
@@ -269,3 +271,9 @@ The following db columns have been identified as common and useful in the contex
 - Tenants & Leaseholders
 - Income Services
 - Revenue & Benefits
+
+## Component Architecture
+![Accounts API component architecture](./doc-images/accounts_api_component_architecture.png)
+
+## Event Driven Architecture
+![Accounts API event driven architecture](./doc-images/accounts_event_driven_arch.png)
