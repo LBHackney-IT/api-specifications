@@ -223,6 +223,7 @@ The following db columns have been identified as common and useful in the contex
 
 
 **TargetTypes**
+
 | Name | Type | Table Field Name | Description |
 |------|------|------------------|-------------|
 | Id | UUID | id | A unique id in the database |
@@ -231,11 +232,12 @@ The following db columns have been identified as common and useful in the contex
 
 
 **ConsolidatedCharges**
+
 | Name | Type | Table Field Name | Description |
 |------|------|------------------|-------------|
 | Type | String | | The type of charge/s |
 | Frequency | String | | How often the charge/s get applied |
-| Amount | Number | The consolidated charge amount |
+| Amount | Number | | The consolidated charge amount |
 
 
 
