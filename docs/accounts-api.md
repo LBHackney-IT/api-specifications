@@ -24,17 +24,20 @@ A decoupled architecture that allows this entity to be reused across multiple se
 - As a service user I would like to see what my account balance is with each service that I subscribe to so that I can see what financial commitments I have.
 - As a caseworker I would like to be able to quickly identify accounts that are in arrears so that I can prioritise cases that need to be actioned more effectively.
 - As a developer, I want to:
-reuse a single Accounts microservice so that development efforts can be focused on other requirements.
-Ensure data updated, retrieved and inserted is consistent across services and reliable.
-Have an easy way to retrieve any data related to an account so that I don’t need to make additional calls to find references for related systems.
+    - Reuse a single Accounts microservice so that development efforts can be focused on other requirements.
+    - Ensure data updated, retrieved and inserted is consistent across services and reliable.
+    - Have an easy way to retrieve any data related to an account so that I don’t need to make additional calls to find references for related systems.
 
 ## Data Meetup Outcome
 Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
 
 ## Endpoints to be created
-1. GET /accounts?targetId={targetId}&type={accountType}&assetIds=[]
-    Function: Gets a collection of accounts for a person or organisation
-	Response Payload:
+1. GET **//accounts?targetId={targetId}&type={accountType}&assetIds=[]**
+
+    **Function:** Gets a collection of accounts for a person or organisation
+
+	**Response Payload:**
+    ```
 	[
         {
             "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
@@ -70,10 +73,14 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
             }
         }
     ]
+    ```
 
-2. GET /accounts/arrears?type={accountType}&sort={propertyName}&direction={asc/desc}
-    Function: Gets a collection of accounts that are in arrears
-    Response Payload:
+2. GET **/accounts/arrears?type={accountType}&sort={propertyName}&direction={asc/desc}**
+
+    **Function:** Gets a collection of accounts that are in arrears
+
+    **Response Payload:**
+    ```
 	[
         {
             "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
@@ -107,10 +114,14 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
             }
         }
     ]
+    ```
 
-3. GET /accounts/{id}
-    Function: Gets a single account record from the supplied id
-    Response Payload: 
+3. GET **/accounts/{id}**
+
+    **Function:** Gets a single account record from the supplied id
+
+    **Response Payload: **
+    ```
     {
         "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
         “targetType”: “Tenure”,
@@ -142,10 +153,14 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
         },
         }
     }
+    ```
 
-4. POST /accounts
-    Function: Creates a new account for a person
-    Request Payload:
+4. POST **/accounts**
+
+    **Function:** Creates a new account for a person
+
+    **Request Payload:**
+    ```
     {
         “TargetType”: “Tenure, Licensing, HousingBenefit”,
         “TargetId”: 123456, //id of target entity, e.g. tenure record
@@ -155,8 +170,9 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
         “StartDate”:  “2021-03-29T15:10:37.471Z”,
         “AccountStatus”: “active”
     }
-
-    Response Payload:
+    ```
+    **Response Payload:**
+    ```
     {
         “Id”: “”, //guid
         “TargetId”: 123456, //id of target entity, e.g. tenure record
@@ -166,10 +182,12 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
         “EndDate”: null,
         “AccountStatus”: “active”
     }
+    ```
 
-5. PATCH /accounts/{id}
-    Function: Updates a person’s account details
-    Request Payload:
+5. PATCH **/accounts/{id}**
+    **Function:** Updates a person’s account details
+    **Request Payload:**
+    ```
     {
         “AccountBalance”: “10.00”,
         “StartDate”: “2021-03-29T15:10:37.471Z”,
@@ -179,24 +197,25 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
         “rentGroupType”: “Major Works, etc”,
         “agreementType”:””,
         "consolidatedCharges": [
-    {
-        "type": "rent",
-        "frequency":"weekly",
-        "amount":101.20”
-    },
-    {
-        "type": "service charges",
-        "frequency":"weekly",
-        "amount":100.20”
-    }
-    ],
+            {
+                "type": "rent",
+                "frequency":"weekly",
+                "amount":101.20”
+            },
+            {
+                "type": "service charges",
+                "frequency":"weekly",
+                "amount":100.20”
+            }
+        ],
         "tenure": {
-        "tenancyId": 31254,
-        "tenancyType": "",
-        “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”,
-                    “assetId”,”1234567890”
+            "tenancyId": 31254,
+            "tenancyType": "",
+            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”,
+            “assetId”,”1234567890”
         }
     }
+    ```
 
 ## Properties/Column Mappings
 The following db columns have been identified as common and useful in the context of an account.
@@ -222,7 +241,7 @@ The following db columns have been identified as common and useful in the contex
 | AccountStatus | String | account_status | Active, suspended or ended |
 
 
-**TargetTypes**
+**Target Types**
 
 | Name | Type | Table Field Name | Description |
 |------|------|------------------|-------------|
@@ -231,7 +250,7 @@ The following db columns have been identified as common and useful in the contex
 | Polarity | String | polarity | Determine whether or not a positive amount is a payment to someone or a payment from someone. |
 
 
-**ConsolidatedCharges**
+**Consolidated Charges**
 
 | Name | Type | Table Field Name | Description |
 |------|------|------------------|-------------|
