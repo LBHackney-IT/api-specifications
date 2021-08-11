@@ -67,8 +67,7 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
             "tenure": {
             "tenancyId": 31254,
             "tenancyType": "",
-            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”,
-            “assetId”,”1234567890”
+            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
             },
             }
         }
