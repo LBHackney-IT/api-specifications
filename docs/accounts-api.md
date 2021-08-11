@@ -32,7 +32,7 @@ A decoupled architecture that allows this entity to be reused across multiple se
 Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
 
 ## Endpoints to be created
-1. GET **//accounts?targetId={targetId}&type={accountType}&assetIds=[]**
+1. GET **//accounts?targetId={targetId}&type={accountType}**
 
     **Function:** Gets a collection of accounts for a person or organisation
 
