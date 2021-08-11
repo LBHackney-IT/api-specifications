@@ -83,6 +83,8 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
 	[
         {
             "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+            “paymentReference”: “[to confirm format]”,
+            “parentAccount”:”[id of the master account]”,
             “targetType”: “Tenure”,
             "targetId": "123456",
             “accountType”: “Recharge, Sundry, Master, etc”,
@@ -107,8 +109,7 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
             "tenure": {
             "tenancyId": 31254,
             "tenancyType": "",
-            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”,
-            “assetId”,”1234567890”
+            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
             },
             }
         }
@@ -123,6 +124,8 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     ```
     {
         "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+        “paymentReference”: “[to confirm format]”,
+        “parentAccount”:”[id of the master account]”,
         “targetType”: “Tenure”,
         "targetId": "123456",
         “accountType”: “Recharge, Sundry, Master, etc”,
@@ -147,8 +150,7 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
         "tenure": {
         "tenancyId": 31254,
         "tenancyType": "",
-        “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”,
-        “assetId”,”1234567890”
+        “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
         },
         }
     }
@@ -173,7 +175,9 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     **Response Payload:**
     ```
     {
-        “Id”: “”, //guid
+        "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+        “paymentReference”: “[to confirm format]”,
+        “parentAccount”:”[id of the master account]”,
         “TargetId”: 123456, //id of target entity, e.g. tenure record
         “TargetType”: “Tenure, Licensing, HousingBenefit”,
         “AccountBalance”: 0,
@@ -212,8 +216,7 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
         "tenure": {
             "tenancyId": 31254,
             "tenancyType": "",
-            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”,
-            “assetId”,”1234567890”
+            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
         }
     }
     ```
