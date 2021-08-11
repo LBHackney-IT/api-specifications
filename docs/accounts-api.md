@@ -54,21 +54,21 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
             "endDate": "2015-07-20",
             "accountStatus": "active",
                 "consolidatedCharges": [
-                {
-            "type": "rent",
-            "frequency":"weekly",
-            "amount":101.20”
-                                        },
-                                        {
-            "type": "service charges",
-            "frequency":"weekly",
-            "amount":100.20”
-                                        } ],
+                    {
+                        "type": "rent",
+                        "frequency":"weekly",
+                        "amount":101.20”
+                    },
+                    {
+                        "type": "service charges",
+                        "frequency":"weekly",
+                        "amount":100.20”
+                    } 
+                ],
             "tenure": {
-            "tenancyId": 31254,
-            "tenancyType": "",
-            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
-            },
+                "tenancyId": 31254,
+                "tenancyType": "",
+                “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
             }
         }
     ]
