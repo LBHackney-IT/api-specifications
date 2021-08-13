@@ -43,10 +43,13 @@ https://ideaflip.com/b/eqjpktpctwe3/
 
 ## Entity: Direct Debits
 ### Endpoints to be created
-POST ***/direct-debit***
-POST ***/direct-debits/export***
-GET ***/direct-debits?targetType={targetType}&targetId={targetId}&status={status}&collectionDate={collectionDate}***
-GET ***/direct-debit/{id}***
+POST **/direct-debit**
+
+POST **/direct-debits/export**
+
+GET **/direct-debits?targetType={targetType}&targetId={targetId}&status={status}&collectionDate={collectionDate}**
+
+GET **/direct-debit/{id}**
 
 ### Request Payload - Direct Debit Exports
 ```
@@ -152,6 +155,7 @@ GET ***/direct-debit/{id}***
 ## Entity: Direct Debit Submissions ##
 ### Endpoints to be created ###
 POST **/direct-debit-submission-file**
+
 GET **/direct-debit-submission-file?status={status}&dateToCollectAmount={date}**
 
 ### Dependant Entities ###
@@ -186,6 +190,7 @@ GET **/direct-debit-submission-file?status={status}&dateToCollectAmount={date}**
 ## Entity: Direct Debit Maintenance ##
 ### Endpoints to be created ###
 POST **/direct-debit/{directDebitId}/direct-debit-maintenance**
+
 GET **/direct-debit/{directDebitId}/direct-debit-maintenance/{id}**
 
 ### Dependant Entities ###
@@ -206,7 +211,7 @@ GET **/direct-debit/{directDebitId}/direct-debit-maintenance/{id}**
     "date": "2021-04-19T02:53:16 -01:00",
     "status": "Applied, Pending"
 }
-
+```
 
 ### Response Payload ###
 ```
@@ -225,6 +230,7 @@ GET **/direct-debit/{directDebitId}/direct-debit-maintenance/{id}**
         "status": "Applied, Pending"
     }
 ]
+```
 
 ### Considerations ###
-Because we want to maintain entity relationships between direct debits and direct debit submissions as well as between direct debits and direct debit maintenance, would it be more appropriate to store this data in a relational database or could we use DynamoDb and still be able to maintain these entity relationships without any additional overhead, eg costs.
+- Because we want to maintain entity relationships between direct debits and direct debit submissions as well as between direct debits and direct debit maintenance, would it be more appropriate to store this data in a relational database or could we use DynamoDb and still be able to maintain these entity relationships without any additional overhead, eg costs.
