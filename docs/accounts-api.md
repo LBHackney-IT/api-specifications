@@ -68,13 +68,17 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
             "tenure": {
                 "tenancyId": 31254,
                 "tenancyType": "",
+                “primaryTenants”:[
+	                “fullName”:””,
+                    “fullName”:””
+                ],
                 “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
             }
         }
     ]
     ```
 
-2. GET **/accounts/arrears?type={accountType}&sort={propertyName}&direction={asc/desc}**
+2. GET **/accounts/arrears?type={accountType}&sort={propertyName}&direction={asc/desc}&resultsCount=[number of items]**
 
     **Function:** Gets a collection of accounts that are in arrears
 
@@ -109,6 +113,10 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
             "tenure": {
             "tenancyId": 31254,
             "tenancyType": "",
+            “primaryTenants”:[
+                “fullName”:””,
+                “fullName”:””
+            ],            
             “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
             },
             }
@@ -150,6 +158,10 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
         "tenure": {
         "tenancyId": 31254,
         "tenancyType": "",
+        “primaryTenants”:[
+            “fullName”:””,
+            “fullName”:””
+        ],
         “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
         },
         }
@@ -216,6 +228,10 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
         "tenure": {
             "tenancyId": 31254,
             "tenancyType": "",
+            “primaryTenants”:[
+                “fullName”:””,
+                “fullName”:””
+            ],
             “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
         }
     }
