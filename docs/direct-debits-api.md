@@ -141,7 +141,7 @@ GET **/direct-debit/{id}**
             "previousPreferredDate”: 1,
             “previousStatus”: “new”
             "newAdditionalAmount": 105.43, 
-            "newPreferredDate”: 1,
+            "newPreferredDate”: 8,
             “newStatus”: “active”
             "reason": "string",
             "date": "2021-04-19T02:53:16 -01:00",
