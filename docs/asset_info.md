@@ -1,7 +1,6 @@
 ---
 id: asset_info
 title: Asset Information API
-slug: /
 ---
 
 ## Purpose
