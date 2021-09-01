@@ -22,8 +22,8 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 - So that I can easily look through the different results and make the correct selection and proceed to the profile that I was looking for
 
 ** Search by : **
-1. First name,Middle name,Last name
-2. Asset- Address line1,Postcode
+1. Person - First name, Middle name, Last name
+2. Asset - Address kine 1, Postcode, Asset type
 
 ## API Specification
 
