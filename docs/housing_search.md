@@ -23,7 +23,7 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 
 ** Search by : **
 1. Person - First name, Middle name, Last name
-2. Asset - Address kine 1, Postcode, Asset type
+2. Asset - Address line 1, Postcode, Asset type
 
 ## API Specification
 
