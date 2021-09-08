@@ -130,8 +130,70 @@ Purpose: Create one or more tenures
 
 **Request object:**
 
-- TO BE ADDED
-
+    {
+      "paymentReference": "string",
+      "householdMembers": [
+        {
+          "id": "TWVoZGlLaW1ha2hlCg==",
+          "type": "person",
+          "fullName": "string",
+          "isResponsible": true,
+          "dateOfBirth": "string",
+          "personTenureType": "Tenant"
+        }
+      ],
+      "tenuredAsset": {
+        "id": "string",
+        "type": "Block",
+        "fullAddress": "string",
+        "uprn": "string"
+      },
+      "charges": {
+        "rent": 0,
+        "currentBalance": 0,
+        "billingFrequency": "string",
+        "serviceCharge": 0,
+        "otherCharges": 0,
+        "combinedServiceCharges": 0,
+        "combinedRentCharges": 0,
+        "tenancyInsuranceCharge": 0,
+        "originalRentCharge": 0,
+        "originalServiceCharge": 0
+      },
+      "startOfTenureDate": "string",
+      "endOfTenureDate": "string",
+      "tenureType": {
+        "code": "INT",
+        "description": "Introductory"
+      },
+      "isTenanted": true,
+      "terminated": {
+        "isTerminated": false,
+        "reasonForTermination": "string"
+      },
+      "successionDate": "string",
+      "evictionDate": "string",
+      "potentialEndDate": "string",
+      "notices": [
+        {
+          "type": "Notice to quit",
+          "servedDate": "2021-03-29",
+          "expiryDate": "string",
+          "endDate": "string",
+          "effectiveDate": "string"
+        }
+      ],
+      "legacyReferences": [
+        {
+          "name": "u_saff_tenancy",
+          "value": "123456"
+        }
+      ],
+      "isMutualExchange": false,
+      "informHousingBenefitsForChanges": false,
+      "isSublet": false,
+      "subletEndDate": "string"
+    }
 **PATCH Tenures:**
 
 Purpose: Update one of more tenures
@@ -139,7 +201,14 @@ Endpoints URL: tenures/{tenureid}
 
 **Request object:**
 
-- TO BE ADDED
+    {
+      "startOfTenureDate": "string",
+      "endOfTenureDate": "string",
+      "tenureType": {
+        "code": "INT",
+        "description": "Introductory"
+      }
+    }
 
 Purpose: Add a person to a tenure
 
@@ -152,7 +221,6 @@ Purpose: Add a person to a tenure
         "fullName": "Person Full Name",
         "isResponsible": true,
         "dateOfBirth": "1951-02-11T00:00:00",
-        "personTenureType": "Leaseholder|Freeholder|Tenant|HouseholdMember"
     }
 
 **DELETE Tenures:**
