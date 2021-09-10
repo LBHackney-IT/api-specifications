@@ -113,6 +113,9 @@ Endpoint URL:
 ** Request Path Parameters: **
 - Id - specifies the Id of a specific request record to return
 
+**Request Headers**
+- ETag
+
 ** Response: **
 - 200
 - One or more help requests
@@ -209,6 +212,8 @@ Endpoints URL: tenures/{tenureid}
         "description": "Introductory"
       }
     }
+**Request Headers**
+- ifMatch
 
 Purpose: Add a person to a tenure
 
