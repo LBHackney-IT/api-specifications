@@ -153,40 +153,44 @@ Internal Server Error
 
 ## Example payload
 
-                            "id": "6f22e9ae3e8a4e0eaf46db02eb87f8e6",
-                            "description": "some notes to attach to an object",
-                            "target type": "person|asset|tenure|repair....",
-                            "target id": "TWVoZGlLaW1ha2hlCg==",
-                            "datetime": "2021-02-19 15:12:00",
+```json
+{
+  "id": "6f22e9ae3e8a4e0eaf46db02eb87f8e6",
+  "title": "Note Title",
+  "description": "some notes to attach to an object",
+  "targetType": "person|asset|tenure|repair....",
+  "targetId": "TWVoZGlLaW1ha2hlCg==",
+  "createdAt": "2021-02-19 15:12:00",
+  “highlight”: “false”,
 
-                            "attachments": [
-                            {
-                            "id": "adac35e4fe5c427f83c56417dbfbf2da",
-                            "title": "document 1",
-                            "description": "document 1 provided for reason X",
-                            "type?": "Identification",
-                            "uri": "https://aws.com/document1.pdf", //documents microservice uri
-                            "valid up to datetime": "2021-08-19 15:12:00"
-                            }
-                            ],
+  "attachments": [
+    {
+      "id": "adac35e4fe5c427f83c56417dbfbf2da",
+      "title": "document 1",
+      "description": "document 1 provided for reason X",
+      "type?": "Identification",
+      "uri": "https://aws.com/document1.pdf", //documents microservice uri
+      "valid up to datetime": "2021-08-19 15:12:00"
+    }
+  ],
 
-                            //do we need a categorisation ?
-                            "Categorisation": {
-                            "category": "cat1",
-                            "sub category": "subcat1",
-                            "description": "some description"
-                            },
+  "categorisation": {
+    "category": "Appointments",
+    "sub category": "subcat1",
+    "description": "some description"
+  },
 
 
-                            "Author": {
-                            "id": "TWVoZGlLaW1ha2hlCg==",
-                            "full name": "Mehdi Kimakhe",
-                            "email": "mehdi.kimakhe@hackney.gov.uk"
-                            },
-
-                            	“tags” : [
-                            		"person",
-                            "update",
-                            "complaint"
-                            	]
-                            }
+  "author": {
+    "id": "TWVoZGlLaW1ha2hlCg==",
+    "full name": "Mehdi Kimakhe",
+    "email": "mehdi.kimakhe@hackney.gov.uk"
+  },
+    
+  “tags” : [
+    "person",
+    "update",
+    "complaint"
+  ]
+}
+```
