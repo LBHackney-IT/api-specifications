@@ -119,8 +119,14 @@ In the second workshop, we discussed the necessity of the equalities information
         "interpreterNeeded",
         "largePrint"
     ],
-    "economicSituation": "employedFullTime",
-    "homeSituation": "temporaryAccommodationPlacedByHackneyCouncil",
+    "economicSituation": {
+      "economicSituationValue": "employedFullTime",
+      "economicSituationValueIfOther": ""
+    },
+    "homeSituation": {
+      "homeSituationValue": "temporaryAccommodationPlacedByHackneyCouncil",
+      "homeSituationValueIfOther": ""
+    },
     "armedForces": "aServingMemberOfTheArmedForces"
 }
 ```
