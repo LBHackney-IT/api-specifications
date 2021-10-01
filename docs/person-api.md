@@ -115,52 +115,33 @@ HackIT proposal for Person data model based on the model proposed by Amido.
 {
     "id": "TWVoZGlLaW1ha2hlCg==",
     "title": "Mr",
-    "forename": "Mehdi",
-    "Preferred forename": "Mehdi",
-    "middle name": "",
+    "firstName": "Mehdi",
+    "middleName": "",
     "surname": "Kimakhe",
-    "Preferred surname": "Kimakhe",
-    "nationality": "Morrocan",
+    "preferredTitle": "Mr"
+    "preferredFirstName": "Mehdi",
+    "preferredMiddleName": "",
+    "preferredSurname": "Kimakhe",
     "place of birth": "Rabat",
     "date of birth": "1989-10-11",
-    "gender": "M",
-    "identification": [
-        {
-            "type": "NI",
-            "value": "1234A",
-            "Original Document Seen": false,
-            ‘Link to document’: ‘link’
-        },
-        {
-            "type": "passport",
-            "value": "A11111",
-            "Original Document Seen": true
-        }
+    "personTypes": [
+      "Tenant"
     ],
-    "languages": [
-        {
-            "language": "French",
-            "is primary": false
-        },
-        {
-            "language": "English",
-            "is primary": true
-        }
+    "tenures": [
+      {
+        "id": "6f22e9ae3e8a4e0eaf46db02eb87f8e6",
+        "type": "SECURE",
+        "startDate": "12/01/2021",
+        "endDate": "23/07/2021",
+        "assetFullAddress": "1 Hillman St, Hackney, E8 1DY",
+        "assetId": "6f22e9ae3e8a4e0eaf46db02eb87f8e6",
+        "uprn": "1234567890",
+        "isActive": false,
+        "paymentReference": "string",
+        "propertyReference": "string"
+      }
     ],
-    "communication": [
-        {
-            "channel": "email",
-            "value": "mehdi.kimakhe@hackney.gov.uk"
-        },
-        {
-            "channel": "phone",
-            "value": "07000000000"
-        }
-    ],
-    "communication requirements": [
-        "sign language",
-        "interpreter needed"
-    ],
+    "reason": "New tenant to Hackney's system",
 
     "links": [
             {
