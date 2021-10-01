@@ -60,32 +60,32 @@ In the second workshop, we discussed the necessity of the equalities information
 
 ### Endpoints to be created for the equality information microservice
 
-Note: equality-information-id should be equal to person-id
-
 1. GET **/equality-information/{equality-information-id}**
-2. PATCH **/equality-information/{equality-information-id}**
-3. POST **/equality-information/{equality-information-id}**
+2. GET **/equality-information/{target-id}**
+3. PATCH **/equality-information/{equality-information-id}**
+4. POST **/equality-information/{equality-information-id}**
 
 **Example payload**
 ```
 {
-    "id": "",
+    "id": "45b919fa-22b4-11ec-9621-0242ac130002",
+    "targetId": "49b092d6-22b4-11ec-9621-0242ac130002",
     "gender": {
-      "genderValue": "M",
+      "genderValue": "m",
       "genderValueIfOther": "",
       "genderDifferentToBirthSex": True
     },
-    "nationality": "British",
+    "nationality": "british",
     "ethnicity": {
-      "ethnicGroupValue": "White",
+      "ethnicGroupValue": "white",
       "ethnicGroupValueIfOther": ""
     },
     "religionOrBelief": {
-      "religionOrBeliefValue": "Christian",
+      "religionOrBeliefValue": "christian",
       "religionOrBeliefValueIfOther": ""
     },
     "sexualOrientation": {
-      "sexualOrientationValue": "Heterosexual",
+      "sexualOrientationValue": "heterosexual",
       "sexualOrientationValueIfOther": ""
     },
     "marriageOrCivilPartnership": {
@@ -94,24 +94,24 @@ Note: equality-information-id should be equal to person-id
     },
     "pregnancyOrMaternity": [
       {
-        "datePregnancy": "2017-01-04", -- date entered by the user
-        "pregnancyRecordValidUntil": "2019-10-04" -- datePregnancy + 2 years and 9 months
+        "pregnancyDate": "2017-01-04", -- date entered by the user
+        "pregnancyValidUntil": "2019-10-04" -- datePregnancy + 2 years and 9 months
       }
     ],
     "nationalInsuranceNumber": "NI111111A",
     "languages": [
         {
-            "language": "French",
+            "language": "french",
             "isPrimary": false
         },
         {
-            "language": "English",
+            "language": "english",
             "isPrimary": true
         }
     ],
     "caringResponsibilities": {
       "provideUnpaidCare": True,
-      "hoursSpentProvidingUnpaidCare": "5 to 9 hours"
+      "hoursSpentProvidingUnpaidCare": "fiveToNineHours"
     },
     "disabled": True,
     "communicationRequirements": [
@@ -119,11 +119,20 @@ Note: equality-information-id should be equal to person-id
         "interpreterNeeded",
         "largePrint"
     ],
-    "economicSituation": "Employed full time",
-    "homeSituation": "Temporary accommodation (placed by Hackney Council)",
-    "armedForces": "A serving member of the armed forces"
+    "economicSituation": "employedFullTime",
+    "homeSituation": "temporaryAccommodationPlacedByHackneyCouncil",
+    "armedForces": "aServingMemberOfTheArmedForces"
 }
 ```
 
-### Architecture Diagram
-![Platform API vs Service API comparison](./doc-images/person_api_arch_diagram.png)
+The following fields will store codes that come from the reference data:
+* genderValue
+* nationality
+* ethnicGroupValue
+* religionOrBeliefValue
+* sexualOrientationValue
+* language
+* hoursSpentProvidingUnpaidCare
+* economicSituation
+* homeSituation
+* armedForces
