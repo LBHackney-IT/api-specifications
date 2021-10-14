@@ -41,39 +41,47 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
 	[
         {
             "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
-            “paymentReference”: “[to confirm format]”,
-            “parentAccount”:”[id of the master account]”,
-            “targetType”: “Tenure”,
+            "paymentReference": "[to confirm format]",
+            "parentAccountId":"[id of the master account]",
+            "targetType": "Tenure",
             "targetId": "123456",
-            “accountType”: “Recharge, Sundry, Master, etc”,
-            “rentGroupType”: “Major Works, etc”,
-            “agreementType”: “M, R, S, X”,
+            "accountType": "Recharge, Sundry, Master, etc",
+            "rentGroupType": "Major Works, etc",
+            "agreementType": "M, R, S, X",
             "accountBalance": 317.54,
-            "lastUpdated": "2021-03-29T15:10:37.471Z",
-            "startDate": "2021-03-29T15:10:37.471Z",
-            "endDate": "2015-07-20",
+			"consolidatedBalance": 615.32,
+			"createdAt":"2021-03-29T15:10:37.471Z",
+			"createdBy":"Admin",
+			"lastUpdatedAt": "2021-03-29T15:10:37.471Z",
+			"lastUpdatedBy":"Staff",    
+			"startDate": "2021-03-29T15:10:37.471Z",
+			"endDate": "2015-07-20",
             "accountStatus": "active",
-                "consolidatedCharges": [
-                    {
-                        "type": "rent",
-                        "frequency":"weekly",
-                        "amount":101.20”
-                    },
-                    {
-                        "type": "service charges",
-                        "frequency":"weekly",
-                        "amount":100.20”
-                    } 
-                ],
-            "tenure": {
-                "tenancyId": 31254,
-                "tenancyType": "",
-                “primaryTenants”:[
-	                “fullName”:””,
-                    “fullName”:””
-                ],
-                “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
-            }
+			"consolidatedCharges": [
+				{
+					"type": "rent",
+					"frequency":"weekly",
+					"amount":101.20"
+				},
+				{
+					"type": "service charges",
+					"frequency":"weekly",
+					"amount":100.20"
+				} 
+			],
+			"tenure": {
+				"tenureId": 31254,
+				"tenureType": {
+					"Code":"PVG",
+					"Description":"Private Garage"
+				},
+				"primaryTenants":[
+					{
+						"id":"74c5fbc4-2fc8-40dc-896a-0cfa671fc832"
+						"fullName":""
+				],
+				"fullAddress","1 Hillman Street, Hackney, E8 1DY"
+			}
         }
     ]
     ```
@@ -87,41 +95,52 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
 	[
         {
             "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
-            “paymentReference”: “[to confirm format]”,
-            “parentAccount”:”[id of the master account]”,
-            “targetType”: “Tenure”,
+			"paymentReference": "[to confirm format]",
+			"parentAccount":"[id of the master account]",
+            "targetType": "Tenure",
             "targetId": "123456",
-            “accountType”: “Recharge, Sundry, Master, etc”,
-            “rentGroupType”: “Major Works, etc”,
-            “agreementType”: “”,
+            "accountType": "Recharge, Sundry, Master, etc",
+            "rentGroupType": "Major Works, etc",
+            "agreementType": "",
             "accountBalance": 317.54,
-            "lastUpdated": "2021-03-29T15:10:37.471Z",
+			"consolidatedBalance": 615.32,
+			"createdAt":"2021-03-29T15:10:37.471Z",
+			"createdBy":"Admin",
+			"lastUpdatedAtDate": "2021-03-29T15:10:37.471Z",
+			"lastUpdatedBy":"Staff",    
             "startDate": "2021-03-29T15:10:37.471Z",
             "endDate": "2015-07-20",
             "accountStatus": "active",
-                "consolidatedCharges": [
+            "consolidatedCharges": [
                 {
-            "type": "rent",
-            "frequency":"weekly",
-            "amount":101.20”
-                                        },
-                                        {
-            "type": "service charges",
-            "frequency":"weekly",
-            "amount":100.20”
-                                        } ],
-            "tenure": {
-            "tenancyId": 31254,
-            "tenancyType": "",
-            “primaryTenants”:[
-                “fullName”:””,
-                “fullName”:””
-            ],            
-            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
-            },
-            }
-        }
-    ]
+					"type": "rent",
+					"frequency":"weekly",
+					"amount":101.20"
+				},
+				{
+					"type": "service charges",
+					"frequency":"weekly",
+					"amount":100.20"
+				} 
+			],
+			"tenure": 
+			{
+				"tenureId": 31254,
+				"tenureType": 
+				{
+					"Code":"PVG",
+					"Description":"Private Garage"
+				},
+				"primaryTenants":
+				[
+					{
+						"id":"74c5fbc4-2fc8-40dc-896a-0cfa671fc832"
+						"fullName":""				
+					}
+				]
+			}
+		}
+	]
     ```
 
 3. GET **/accounts/{id}**
@@ -132,40 +151,54 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     ```
     {
         "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
-        “paymentReference”: “[to confirm format]”,
-        “parentAccount”:”[id of the master account]”,
-        “targetType”: “Tenure”,
+        "paymentReference": "[to confirm format]",
+        "parentAccount":"[id of the master account]",
+        "targetType": "Tenure",
         "targetId": "123456",
-        “accountType”: “Recharge, Sundry, Master, etc”,
-        “rentGroupType”: “Major Works, etc”,
-        “agreementType”: “”,
+        "accountType": "Recharge, Sundry, Master, etc",
+        "rentGroupType": "Major Works, etc",
+        "agreementType": "",
         "accountBalance": 317.54,
-        "lastUpdated": "2021-03-29T15:10:37.471Z",
+		"consolidatedBalance": 615.32,
+		"createdAt":"2021-03-29T15:10:37.471Z",
+		"createdBy":"Admin",
+		"lastUpdatedAtDate": "2021-03-29T15:10:37.471Z",
+		"lastUpdatedBy":"Staff",    
         "startDate": "2021-03-29T15:10:37.471Z",
         "endDate": "2015-07-20",
         "accountStatus": "active",
-            "consolidatedCharges": [
-            {
-        "type": "rent",
-        "frequency":"weekly",
-        "amount":101.20”
-                                    },
-                                    {
-        "type": "service charges",
-        "frequency":"weekly",
-        "amount":100.20”
-                                    } ],
-        "tenure": {
-        "tenancyId": 31254,
-        "tenancyType": "",
-        “primaryTenants”:[
-            “fullName”:””,
-            “fullName”:””
-        ],
-        “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
-        },
-        }
-    }
+		"consolidatedCharges": 
+		[
+			{
+				"type": "rent",
+				"frequency":"weekly",
+				"amount":101.20"
+			},
+			{
+				"type": "service charges",
+				"frequency":"weekly",
+				"amount":100.20"
+			} 
+		],
+		"tenure": 
+		{
+			"tenureId": 31254,
+			"tenureType": 
+			{
+				"Code":"PVG",
+				"Description":"Private Garage"
+			},      
+			"tenureType": "",
+			"primaryTenants":
+				[
+					{
+						"id":"74c5fbc4-2fc8-40dc-896a-0cfa671fc832"
+						"fullName":""
+					}
+				],
+			"fullAddress","1 Hillman Street, Hackney, E8 1DY",
+		}
+	}
     ```
 
 4. POST **/accounts**
@@ -175,27 +208,36 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     **Request Payload:**
     ```
     {
-        “TargetType”: “Tenure, Licensing, HousingBenefit”,
-        “TargetId”: 123456, //id of target entity, e.g. tenure record
-        “accountType”: “Recharge, Master, etc”,
-        “rentGroupType”: “Major Works, etc”,
-        “agreementType”:””,
-        “StartDate”:  “2021-03-29T15:10:37.471Z”,
-        “AccountStatus”: “active”
+		"parentAccount": "74c5fbc4-2fc8-40dc-896a-0cfa671fc435",
+		"paymentReference": "123234345",
+		"TargetType": "Tenure, Licensing, HousingBenefit",
+		"TargetId": 123456, //id of target entity, e.g. tenure record
+		"accountType": "Recharge, Master, etc",
+		"rentGroupType": "Major Works, etc",
+		"agreementType":"",
+		"createdBy": "Admin",
+		"lastUpdatedBy": "Admin",
+		"AccountStatus": "active"
     }
     ```
     **Response Payload:**
     ```
     {
-        "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
-        “paymentReference”: “[to confirm format]”,
-        “parentAccount”:”[id of the master account]”,
-        “TargetId”: 123456, //id of target entity, e.g. tenure record
-        “TargetType”: “Tenure, Licensing, HousingBenefit”,
-        “AccountBalance”: 0,
-        “StartDate”:  “2021-03-29T15:10:37.471Z”,
-        “EndDate”: null,
-        “AccountStatus”: “active”
+		"id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+		"parentAccount": "74c5fbc4-2fc8-40dc-896a-0cfa671fc435",
+		"paymentReference": "123234345",
+		"TargetType": "Tenure, Licensing, HousingBenefit",
+		"TargetId": 123456, //id of target entity, e.g. tenure record
+		"accountType": "Recharge, Master, etc",
+		"rentGroupType": "Major Works, etc",
+		"agreementType":"",
+		"createdBy": "Admin",
+		"lastUpdatedBy": "Admin",
+		"createdAt": "2021-03-29T15:10:37.4710000+00:00",
+		"lastUpdatedAt": "2021-03-29T15:10:37.4710000+00:00",
+		"StartDate":  "2021-03-29T15:10:37.471Z",
+		"endDate": "2021-03-29T15:10:37.4710000+00:00",
+		"AccountStatus": "active"
     }
     ```
 
@@ -205,36 +247,40 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     
     **Request Payload:**
     ```
-    {
-        “AccountBalance”: “10.00”,
-        “StartDate”: “2021-03-29T15:10:37.471Z”,
-        “EndDate”:  “2021-03-29T15:10:37.471Z”,
-        “AccountStatus”: “active”,
-        “accountType”: “Recharge, Master, etc”,
-        “rentGroupType”: “Major Works, etc”,
-        “agreementType”:””,
-        "consolidatedCharges": [
-            {
-                "type": "rent",
-                "frequency":"weekly",
-                "amount":101.20”
-            },
-            {
-                "type": "service charges",
-                "frequency":"weekly",
-                "amount":100.20”
-            }
-        ],
-        "tenure": {
-            "tenancyId": 31254,
-            "tenancyType": "",
-            “primaryTenants”:[
-                “fullName”:””,
-                “fullName”:””
-            ],
-            “fullAddress”,”1 Hillman Street, Hackney, E8 1DY”
-        }
-    }
+	[
+		{
+			"value":
+			[
+				{ 
+					"Type":"Rent",
+					"Frequency":"Weekly",
+					"Amount":1200
+				},
+				{
+					"Type":"Service",
+					"Frequency":"Monthly",
+					"Amount":2200
+				}
+			],
+			"path": "ConsolidatedCharges",
+			"op": "add"
+		},
+		{
+			"value":300,
+			"path": "AccountBalance",
+			"op": "replace"
+		},
+		{
+			"value":850,
+			"path": "consolidatedBalance",
+			"op": "replace"
+		},
+		{
+			"value":"2021-03-29T15:10:37.4710000Z",
+			"path": "endDate",
+			"op": "replace"
+		}
+	]
     ```
 
 ## Properties/Column Mappings
@@ -242,22 +288,25 @@ The following db columns have been identified as common and useful in the contex
 
 | Name | Type | Table Field Name | Description | 
 |------|------|------------------|-------------|
-| Id | UUID | id | A unique id in the database |
+| Id | GUID | id | A unique id in the database |
 | TargetId | String | target_id | A reference to the person holding this account|
 | TargetType | String | target_type | Referenced from the collection of target types sub table |
 | AccountType | String | account_type | The type of account, eg Recharge, Sundry, Master |
 | RentGroupType | String | rent_group_type | Eg MajorWorks |
 | AgreementType | String | agreement_type | |
 | AccountBalance | Number | account_balance | The current balance of the account (calculated based on activity on the account such as charges, payments, etc) |
+| ConsolidatedBalance | Number | consolidated_balance | The summarized balance amount of the all related account to the master one |
+| ParentAccountId | String/Varchar | parent_account_id | The main and master account which includes child accounts too. |
 | PaymentReference | String/Varchar | payment_reference | A user friendly reference for an account (calculated - Ibrahim has the formula) |
-| CreatedDate | TimeStamp | created_date | The date the account was created |
+| CreatedAt | TimeStamp | created_date | The date the account was created |
 | CreatedBy | String | created_by | The user who created the record |
 | LastUpdatedBy | String | last_updated_by | The last user who updated the record |
-| LastUpdatedDate | TimeStamp | last_updated | When last the account record was updated |
+| LastUpdatedAt | TimeStamp | last_updated | When last the account record was updated |
 | StartDate | TimeStamp | start_date | Date the account was opened |
 | EndDate | TimeStamp | end_date | Date the account was closed |
 | EndReasonCode | String | end_reason_code | The reason for the account ending |
 | ConsolidatedCharges | Object | consolidated_charges | See breakdown of consolidated charges |
+| Tenure | Object | tenure | Includes the information about the tenancy and responsible person |
 | AccountStatus | String | account_status | Active, suspended or ended |
 
 
@@ -265,7 +314,7 @@ The following db columns have been identified as common and useful in the contex
 
 | Name | Type | Table Field Name | Description |
 |------|------|------------------|-------------|
-| Id | UUID | id | A unique id in the database |
+| Id | GUID | id | A unique id in the database |
 | TargetType | String | target_type | The type of the target |
 | Polarity | String | polarity | Determine whether or not a positive amount is a payment to someone or a payment from someone. |
 
@@ -278,6 +327,29 @@ The following db columns have been identified as common and useful in the contex
 | Frequency | String | | How often the charge/s get applied |
 | Amount | Number | | The consolidated charge amount |
 
+**Tenure**
+
+| Name | Type | Table Field Name | Description |
+|------|------|------------------|-------------|
+| TenureId | String | TenureId | The tenancy id provided to the tenant |
+| TenureType | Object | TenureType | Type of tenancy agreement such as Introductory |
+| FullAddress | String | FullAddress | The tenured asset full address |
+| PrimaryTenants | Array of Object | PrimaryTenants | Who is the responsible of this tenancy agreement |
+
+**PrimaryTenants**
+
+| Name | Type | Table Field Name | Description |
+|------|------|------------------|-------------|
+| Id | String | PersonId |	|
+| FullName | String | FullName |	|
+
+
+**TenureType**
+
+| Name | Type | Table Field Name | Description |
+|------|------|------------------|-------------|
+| Code | String | Code |	|
+| Description | String | Description |	|
 
 
 ## Other considerations
