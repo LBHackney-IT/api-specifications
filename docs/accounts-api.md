@@ -39,51 +39,52 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
 	**Response Payload:**
     ```
 	[
-        {
-            "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
-            "paymentReference": "[to confirm format]",
-            "parentAccountId":"[id of the master account]",
-            "targetType": "Tenure",
-            "targetId": "123456",
-            "accountType": "Recharge, Sundry, Master, etc",
-            "rentGroupType": "Major Works, etc",
-            "agreementType": "M, R, S, X",
-            "accountBalance": 317.54,
+		{
+			"id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+			"paymentReference": "[to confirm format]",
+			"parentAccountId": "[id of the master account]",
+			"targetType": "Tenure",
+			"targetId": "123456",
+			"accountType": "Recharge, Sundry, Master, etc",
+			"rentGroupType": "Major Works, etc",
+			"agreementType": "M, R, S, X",
+			"accountBalance": 317.54,
 			"consolidatedBalance": 615.32,
-			"createdAt":"2021-03-29T15:10:37.471Z",
-			"createdBy":"Admin",
+			"createdAt": "2021-03-29T15:10:37.471Z",
+			"createdBy": "Admin",
 			"lastUpdatedAt": "2021-03-29T15:10:37.471Z",
-			"lastUpdatedBy":"Staff",    
+			"lastUpdatedBy": "Staff",
 			"startDate": "2021-03-29T15:10:37.471Z",
 			"endDate": "2015-07-20",
-            "accountStatus": "active",
+			"accountStatus": "active",
 			"consolidatedCharges": [
 				{
 					"type": "rent",
-					"frequency":"weekly",
-					"amount":101.20"
+					"frequency": "weekly",
+					"amount": "101.20"
 				},
 				{
 					"type": "service charges",
-					"frequency":"weekly",
-					"amount":100.20"
-				} 
+					"frequency": "weekly",
+					"amount": "100.20"
+				}
 			],
 			"tenure": {
 				"tenureId": 31254,
 				"tenureType": {
-					"Code":"PVG",
-					"Description":"Private Garage"
+					"Code": "PVG",
+					"Description": "Private Garage"
 				},
-				"primaryTenants":[
+				"primaryTenants": [
 					{
-						"id":"74c5fbc4-2fc8-40dc-896a-0cfa671fc832"
-						"fullName":""
+						"id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+						"fullName": "John Smith"
+					}
 				],
-				"fullAddress","1 Hillman Street, Hackney, E8 1DY"
+				"fullAddress": "1 Hillman Street, Hackney, E8 1DY"
 			}
-        }
-    ]
+		}
+	]
     ```
 
 2. GET **/accounts/arrears?type={accountType}&sort={propertyName}&direction={asc/desc}&resultsCount=[number of items]**
@@ -93,49 +94,46 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     **Response Payload:**
     ```
 	[
-        {
-            "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+		{
+			"id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
 			"paymentReference": "[to confirm format]",
-			"parentAccount":"[id of the master account]",
-            "targetType": "Tenure",
-            "targetId": "123456",
-            "accountType": "Recharge, Sundry, Master, etc",
-            "rentGroupType": "Major Works, etc",
-            "agreementType": "",
-            "accountBalance": 317.54,
+			"parentAccount": "[id of the master account]",
+			"targetType": "Tenure",
+			"targetId": "123456",
+			"accountType": "Recharge, Sundry, Master, etc",
+			"rentGroupType": "Major Works, etc",
+			"agreementType": "",
+			"accountBalance": 317.54,
 			"consolidatedBalance": 615.32,
-			"createdAt":"2021-03-29T15:10:37.471Z",
-			"createdBy":"Admin",
+			"createdAt": "2021-03-29T15:10:37.471Z",
+			"createdBy": "Admin",
 			"lastUpdatedAtDate": "2021-03-29T15:10:37.471Z",
-			"lastUpdatedBy":"Staff",    
-            "startDate": "2021-03-29T15:10:37.471Z",
-            "endDate": "2015-07-20",
-            "accountStatus": "active",
-            "consolidatedCharges": [
-                {
+			"lastUpdatedBy": "Staff",
+			"startDate": "2021-03-29T15:10:37.471Z",
+			"endDate": "2015-07-20",
+			"accountStatus": "active",
+			"consolidatedCharges": [
+				{
 					"type": "rent",
-					"frequency":"weekly",
-					"amount":101.20"
+					"frequency": "weekly",
+					"amount": "101.20"
 				},
 				{
 					"type": "service charges",
-					"frequency":"weekly",
-					"amount":100.20"
-				} 
+					"frequency": "weekly",
+					"amount": "100.20"
+				}
 			],
-			"tenure": 
-			{
+			"tenure": {
 				"tenureId": 31254,
-				"tenureType": 
-				{
-					"Code":"PVG",
-					"Description":"Private Garage"
+				"tenureType": {
+					"Code": "PVG",
+					"Description": "Private Garage"
 				},
-				"primaryTenants":
-				[
+				"primaryTenants": [
 					{
-						"id":"74c5fbc4-2fc8-40dc-896a-0cfa671fc832"
-						"fullName":""				
+						"id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+						"fullName": ""
 					}
 				]
 			}
@@ -149,54 +147,50 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
 
     **Response Payload: **
     ```
-    {
-        "id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
-        "paymentReference": "[to confirm format]",
-        "parentAccount":"[id of the master account]",
-        "targetType": "Tenure",
-        "targetId": "123456",
-        "accountType": "Recharge, Sundry, Master, etc",
-        "rentGroupType": "Major Works, etc",
-        "agreementType": "",
-        "accountBalance": 317.54,
+	{
+		"id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+		"paymentReference": "[to confirm format]",
+		"parentAccount": "[id of the master account]",
+		"targetType": "Tenure",
+		"targetId": "123456",
+		"accountType": "Recharge, Sundry, Master, etc",
+		"rentGroupType": "Major Works, etc",
+		"agreementType": "",
+		"accountBalance": 317.54,
 		"consolidatedBalance": 615.32,
-		"createdAt":"2021-03-29T15:10:37.471Z",
-		"createdBy":"Admin",
+		"createdAt": "2021-03-29T15:10:37.471Z",
+		"createdBy": "Admin",
 		"lastUpdatedAtDate": "2021-03-29T15:10:37.471Z",
-		"lastUpdatedBy":"Staff",    
-        "startDate": "2021-03-29T15:10:37.471Z",
-        "endDate": "2015-07-20",
-        "accountStatus": "active",
-		"consolidatedCharges": 
-		[
+		"lastUpdatedBy": "Staff",
+		"startDate": "2021-03-29T15:10:37.471Z",
+		"endDate": "2015-07-20",
+		"accountStatus": "active",
+		"consolidatedCharges": [
 			{
 				"type": "rent",
-				"frequency":"weekly",
-				"amount":101.20"
+				"frequency": "weekly",
+				"amount": "101.20"
 			},
 			{
 				"type": "service charges",
-				"frequency":"weekly",
-				"amount":100.20"
-			} 
+				"frequency": "weekly",
+				"amount": "100.20"
+			}
 		],
-		"tenure": 
-		{
+		"tenure": {
 			"tenureId": 31254,
-			"tenureType": 
-			{
-				"Code":"PVG",
-				"Description":"Private Garage"
-			},      
+			"tenureType": {
+				"Code": "PVG",
+				"Description": "Private Garage"
+			},
 			"tenureType": "",
-			"primaryTenants":
-				[
-					{
-						"id":"74c5fbc4-2fc8-40dc-896a-0cfa671fc832"
-						"fullName":""
-					}
-				],
-			"fullAddress","1 Hillman Street, Hackney, E8 1DY",
+			"primaryTenants": [
+				{
+					"id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
+					"fullName": ""
+				}
+			],
+			"fullAddress": "1 Hillman Street, Hackney, E8 1DY"
 		}
 	}
     ```
@@ -222,23 +216,23 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     ```
     **Response Payload:**
     ```
-    {
+	{
 		"id": "74c5fbc4-2fc8-40dc-896a-0cfa671fc832",
 		"parentAccount": "74c5fbc4-2fc8-40dc-896a-0cfa671fc435",
 		"paymentReference": "123234345",
 		"TargetType": "Tenure, Licensing, HousingBenefit",
-		"TargetId": 123456, //id of target entity, e.g. tenure record
+		"TargetId": 123456,
 		"accountType": "Recharge, Master, etc",
 		"rentGroupType": "Major Works, etc",
-		"agreementType":"",
+		"agreementType": "",
 		"createdBy": "Admin",
 		"lastUpdatedBy": "Admin",
 		"createdAt": "2021-03-29T15:10:37.4710000+00:00",
 		"lastUpdatedAt": "2021-03-29T15:10:37.4710000+00:00",
-		"StartDate":  "2021-03-29T15:10:37.471Z",
+		"StartDate": "2021-03-29T15:10:37.471Z",
 		"endDate": "2021-03-29T15:10:37.4710000+00:00",
 		"AccountStatus": "active"
-    }
+	}
     ```
 
 5. PATCH **/accounts/{id}**
@@ -249,34 +243,33 @@ Accounts workshop - https://ideaflip.com/b/75dgi3rx6h2t/
     ```
 	[
 		{
-			"value":
-			[
-				{ 
-					"Type":"Rent",
-					"Frequency":"Weekly",
-					"Amount":1200
+			"value": [
+				{
+					"Type": "Rent",
+					"Frequency": "Weekly",
+					"Amount": 1200
 				},
 				{
-					"Type":"Service",
-					"Frequency":"Monthly",
-					"Amount":2200
+					"Type": "Service",
+					"Frequency": "Monthly",
+					"Amount": 2200
 				}
 			],
 			"path": "ConsolidatedCharges",
 			"op": "add"
 		},
 		{
-			"value":300,
+			"value": 300,
 			"path": "AccountBalance",
 			"op": "replace"
 		},
 		{
-			"value":850,
+			"value": 850,
 			"path": "consolidatedBalance",
 			"op": "replace"
 		},
 		{
-			"value":"2021-03-29T15:10:37.4710000Z",
+			"value": "2021-03-29T15:10:37.4710000Z",
 			"path": "endDate",
 			"op": "replace"
 		}
