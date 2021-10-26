@@ -37,9 +37,9 @@ Following that, each individual service can use this data to develop their custo
 
 GET /patch/{id}
 GET /patch?parentId={parentId}
-DELETE /patch{id}/responsible-entity/{responsible-entity-id}
+DELETE /patch/{id}/responsible-entity/{responsible-entity-id}
 POST /PATCH
-PATCH /patch{id}/responsible-entity/{responsible-entity-id}
+PATCH /patch/{id}/responsible-entity/{responsible-entity-id}
 
 #### Update ResponseObject:
 ```json
