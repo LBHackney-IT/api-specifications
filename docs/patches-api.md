@@ -35,7 +35,7 @@ Following that, each individual service can use this data to develop their custo
 
 
 ## API Endpoints:
-```json
+```
 GET /patch/{id}
 GET /patch?parentId={parentId}
 DELETE /patch/{id}/responsible-entity/{responsible-entity-id}
