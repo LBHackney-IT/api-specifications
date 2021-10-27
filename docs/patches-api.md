@@ -18,7 +18,8 @@ As part of Manage my Home and Manage areas projects, we looked at how patches an
 -   As a MMH user, I want to know which officer/s is/are responsible for a patch or area.
 -   As a MA user, I want to know which cases are allocated to the patch I am assigned to so that I can focus only on the cases that are relevant to me.
 -   As a MA manager I want to be able to easily assign arrears cases to a group of workers so I can manage casework effectively.
-Workshop outcome
+
+## Workshop outcome
 
 
 We looked at two services - Manage a Tenancy (MaT) and Manage Areas(MA) and concluded that patches and areas are different in the context of the two services. Although they do refer to geographical areas, those areas are different based on the service. Further to this, in the context of MA, patches for leaseholders are different - not based only on a geographical area. Reassignment is also different between the two applications. With MaT, reassignment of the responsible officer/s for a patch happens when someone is off sick, on maternity leave, etc. Once a patch is reassigned, the responsible officer would see all processes/action items that are related to their patch in their work tray. With MA, everyone can see all items in their work tray, which leads towards the concept of a “group” responsible for a patch, rather than individuals. 
@@ -34,12 +35,13 @@ Following that, each individual service can use this data to develop their custo
 
 
 ## API Endpoints:
-
+```json
 GET /patch/{id}
 GET /patch?parentId={parentId}
 DELETE /patch/{id}/responsible-entity/{responsible-entity-id}
 POST /PATCH
 PATCH /patch/{id}/responsible-entity/{responsible-entity-id}
+```
 
 #### Update ResponseObject:
 ```json
