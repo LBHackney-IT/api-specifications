@@ -18,20 +18,20 @@ As part of Manage My Home, there is a need to build a workflow engine that will 
 ## User Needs
 As a service user, I would like to be able to:
 - Initiate a workflow process so that I can keep track of progress
-- Assign a process to a specific patch
-- Capture form data related to the process
-- Upload documents to the process
+- Assign a process to a specific patch so that I can enable assingment of a process between patches
+- Capture form data related to the process so that I can view data related to the process
+- Upload documents to the process so that I can add additional documents related to the process
 
 As a consumer of this API, I would like to:
-- Initialise a new process
-- Get the status of an existing process
-- Update an existing process
-- Progress an existing process
+- Initialise a new process so that processes can be stored in one place
+- Get the status of an existing process so that I can keep track of progress
+- Update an existing process so that the process has the most update details
+- Progress an existing process so that the process has the most update-to-date progress
 
 As a developer, I would like to:
-- Easily manage the configuration of processes
-- Identify and re-use as much common code as possible across the processes
-- Include sufficient levels of test coverage over the processes
+- Easily manage the configuration of processes so that development time is reduced
+- Identify and re-use as much common code as possible across the processes so that consistenct and reusablily are achieved
+- Include sufficient levels of test coverage over the processes so that Test Driven standards are met
 
 
 #### API Endpoints with Payload:
