@@ -34,16 +34,14 @@ As a developer, I would like to:
 - Include sufficient levels of test coverage over the processes
 
 
-#### API Endpoints:
-```
-GET /api/v1/process/process-name/{id}/
-POST /api/v1/process
-PATCH /api/v1/process/process-name/{id}
-```
+#### API Endpoints with Payload:
 
-#### Payload
+###### GET Endpoint:
 
 ```json
+
+GET /api/v1/process/process-name/{id}/
+
 {
   "processName": {
     "id": "dc3eb7a0-73b2-4ad4-a267-622510fa06cb",
@@ -118,5 +116,46 @@ PATCH /api/v1/process/process-name/{id}
 }
 ```
 
+###### POST Endpoint:
 
+```json
+POST /api/v1/process/{process-name}
+{
+  "targetId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+  "formData": {
+    "field1": true,
+    "field2": "string",
+    "field3": 1,
+    "field4": "string",
+    "field5": false
+  },
+  "documents": [
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e7",
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e8"
+  ]
+}
+```
 
+###### PATCH Endpoint:
+
+```json
+PATCH /api/v1/process/{process-name}/{id}/{process-trigger}
+
+{
+  "targetId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+  "formData": {
+    "field1": true,
+    "field2": "string",
+    "field3": 1,
+    "field4": "string",
+    "field5": false
+  },
+  "documents": [
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e7",
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e8"
+  ]
+}
+
+```
