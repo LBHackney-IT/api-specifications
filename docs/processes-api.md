@@ -43,18 +43,25 @@ As a developer, I would like to:
 GET /api/v1/process/process-name/{id}/
 
 {
-  "processName": {
+  "process": {
     "id": "dc3eb7a0-73b2-4ad4-a267-622510fa06cb",
+    "targetId": "f83540f9-034a-7bfe-9348-7094dd0e0f46",
+    "relatedEntities": [
+      "a83540f9-034a-7bfe-9348-7094dd0e0f46",
+      "b83540f9-034a-7bfe-9348-7094dd0e0f46",
+      "c83540f9-034a-7bfe-9348-7094dd0e0f46"
+    ],
+    "processName": "Change of Name",
     "currentState": {
-      "state": "DocumentsAttached",
+      "stateName": "DocumentsAttached",
       "permittedTriggers": [
         "SubmitApplication"
       ],
       "assignment": {
-        "patch": "patch1"
+        "type": "patch",
+        "value": "string"
       },
       "processData": {
-        "targetId": "f83540f9-034a-7bfe-9348-7094dd0e0f46",
         "formData": "{}",
         "documents": [
           "00578577-91c6-4244-a72c-c757fefe8d87",
@@ -67,17 +74,17 @@ GET /api/v1/process/process-name/{id}/
       "createdAt": "2021-09-24T09:30:00Z",
       "updatedAt": "2021-09-24T09:30:00Z"
     },
-    "processStates": [
+    "previousStates": [
       {
-        "state": "ApplicationStarted",
+        "stateName": "ApplicationStarted",
         "permittedTriggers": [
           "AttachDocuments"
         ],
         "assignment": {
-          "patch": "housingofficers"
+          "type": "googleGroup",
+          "value": "housingofficers"
         },
         "processData": {
-          "targetId": "f83540f9-034a-7bfe-9348-7094dd0e0f46",
           "formData": {
             "title": "Mr",
             "firstName": "Patrick",
@@ -90,15 +97,15 @@ GET /api/v1/process/process-name/{id}/
         "updatedAt": "2021-09-24T09:30:00Z"
       },
       {
-        "state": "DocumentsAttached",
+        "stateName": "DocumentsAttached",
         "permittedTriggers": [
           "SubmitApplication"
         ],
         "assignment": {
-          "patch": "housingofficers"
+          "type": "email",
+          "value": "estatesafety@hackney.gov.uk"
         },
         "processData": {
-          "targetId": "f83540f9-034a-7bfe-9348-7094dd0e0f46",
           "formData": "{}",
           "documents": [
             "00578577-91c6-4244-a72c-c757fefe8d87",
