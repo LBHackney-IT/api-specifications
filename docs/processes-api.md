@@ -129,6 +129,11 @@ GET /api/v1/process/process-name/{id}/
 POST /api/v1/process/{process-name}
 {
   "targetId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+  "relatedEntities": [
+    "a83540f9-034a-7bfe-9348-7094dd0e0f46",
+    "b83540f9-034a-7bfe-9348-7094dd0e0f46",
+    "c83540f9-034a-7bfe-9348-7094dd0e0f46"
+  ],
   "formData": {
     "field1": true,
     "field2": "string",
@@ -150,7 +155,6 @@ POST /api/v1/process/{process-name}
 PATCH /api/v1/process/{process-name}/{id}/{process-trigger}
 
 {
-  "targetId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
   "formData": {
     "field1": true,
     "field2": "string",
