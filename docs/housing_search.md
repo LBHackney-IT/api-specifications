@@ -24,6 +24,9 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 ** Search by : **
 1. Person - First name, Middle name, Last name
 2. Asset - Address line 1, Postcode, Asset type
+3. Tenure - Payment Reference, FullAddress of TenuredAsset , Household Members FullName  
+4. Transactions - Person FullName, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount  
+
 
 ## API Specification
 
@@ -57,6 +60,8 @@ Allows to search on fields which do not exist only on platform APIs. It allows t
 - By person
 - Person Information
 - Tenure
+- Asset Information
+- Transactions
 - Alerts
 
 ** By Asset **
