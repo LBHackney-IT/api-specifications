@@ -27,6 +27,12 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 3. Tenure - Payment Reference, FullAddress of TenuredAsset , Household Members FullName  
 4. Transactions - Person FullName, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount  
 
+### Considerations
+#### Transactions
+* The search must be flexible enough to allow for the successful finding of information without assuming the form of the query. An officer may know the PRN, or the address, or just the name.
+* A result should act as a navigation tool to deeper more meaningful information.
+* Search will most likely be the first thing a user does in order to find information.
+* Search should be available for any data set (property, transaction, document).
 
 ## API Specification
 
