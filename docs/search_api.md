@@ -185,7 +185,9 @@ GET /search/persons- retrieve person record through the use of simple search and
 
 - 200 - Successfully retrieved person details upon request
 - 404 - searched Person not found
-- GET/search/assets?addressText - retrieve asset record through the use of simple search based on the addressText provided and the following query parameters for pagination:
+
+
+GET /search/assets?addressText - retrieve asset record through the use of simple search based on the addressText provided and the following query parameters for pagination:
 - searchText
 - pageSize
 - Page
@@ -196,7 +198,9 @@ GET /search/persons- retrieve person record through the use of simple search and
 
 - 200 - Successfully retrieved asset details upon request
 - 404 - searched asset not found
-- GET/search/tenures?searchText - retrieve tenure record through the use of simple search based on the searchText provided and the following query parameters for pagination:
+
+
+GET /search/tenures?searchText - retrieve tenure record through the use of simple search based on the searchText provided and the following query parameters for pagination:
 searchText
 - pageSize
 - Page
