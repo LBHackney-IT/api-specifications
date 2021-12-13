@@ -172,7 +172,7 @@ Entities dependent on Search API.
 - Lease
 - Repairs (work order)
 
-**  Endpoints to be Created **
+**  Endpoints **
 
 GET /search/persons- retrieve person record through the use of simple search and the following query parameters for pagination:
 - searchText
@@ -185,7 +185,9 @@ GET /search/persons- retrieve person record through the use of simple search and
 
 - 200 - Successfully retrieved person details upon request
 - 404 - searched Person not found
-- GET/search/assets?addressText - retrieve asset record through the use of simple search based on the addressText provided and the following query parameters for pagination:
+
+
+GET /search/assets?addressText - retrieve asset record through the use of simple search based on the addressText provided and the following query parameters for pagination:
 - searchText
 - pageSize
 - Page
@@ -196,7 +198,9 @@ GET /search/persons- retrieve person record through the use of simple search and
 
 - 200 - Successfully retrieved asset details upon request
 - 404 - searched asset not found
-- GET/search/tenures?searchText - retrieve tenure record through the use of simple search based on the searchText provided and the following query parameters for pagination:
+
+
+GET /search/tenures?searchText - retrieve tenure record through the use of simple search based on the searchText provided and the following query parameters for pagination:
 searchText
 - pageSize
 - Page
@@ -206,6 +210,19 @@ searchText
 ** 	Responses: **
 - 200 - Successfully retrieved tenure details upon request
 - 404 - searched tenure not found
+
+
+GET /search/transactions?[searchText]OR[targetId] - to get paginated transactions list by search text and the following query parameters for pagination:
+- searchText
+- pageSize
+- Page
+- Startdate - DateTime, optional
+- endDate - DateTime, optional
+- isSuspense - bool, optional. Default value is false
+
+** 	Responses: **
+- 200 - Successfully retrieved tenure details upon request
+- 500 - Internal server error 
 
 ## Example payload
 
@@ -316,6 +333,42 @@ https://app.swaggerhub.com/apis/Hackney/housingSearchApi/1.0.0#/
                     "total": 100
                   }
 
+** Payload for search transactions **
+
+                {
+                    "results": {
+                        "total": 2,
+                        "transactions": [
+                            {
+                                "id": "677f9d8f-ce5d-4cdd-8463-168c67dad037",
+                                "targetId": "02188fc8-9fbd-4afe-98b3-0319eb2e4ddf",
+                                "targetType": 0,
+                                "periodNo": 2,
+                                "financialYear": 2021,
+                                "financialMonth": 12,
+                                "transactionSource": "DD",
+                                "transactionType": 0,
+                                "transactionDate": "2021-12-07T23:00:00+00:00",
+                                "transactionAmount": 56.78,
+                                "paymentReference": "216704",
+                                "bankAccountNumber": "******78",
+                                "isSuspense": false,
+                                "suspenseResolutionInfo": null,
+                                "paidAmount": 56.78,
+                                "chargedAmount": 87.53,
+                                "balanceAmount": 1025.0,
+                                "housingBenefitAmount": 25.56,
+                                "address": "Apartment 22, 18 G road, SW11",
+                                "sender": {
+                                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                                    "fullName": "Hamid Jolany"
+                                },
+                                "sortCode" : "486734",
+                                "fund": "HSGSUN"
+                            }
+                        ]
+                    }
+                }
 
 ## Suggested changes
 
