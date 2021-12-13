@@ -24,6 +24,17 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 ** Search by : **
 1. Person - First name, Middle name, Last name
 2. Asset - Address line 1, Postcode, Asset type
+3. Tenure - Payment Reference, FullAddress of TenuredAsset , Household Members FullName  
+4. Transactions - Sender name, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount  
+
+### Considerations
+#### Transactions
+* The search must be flexible enough to allow for the successful finding of information without assuming the form of the query. An officer may know the PRN, or the address, or just the sender name.
+* A result should act as a navigation tool to deeper more meaningful information.
+* Search will most likely be the first thing a user does in order to find information.
+* Search should be available for any data set (property, transaction, document).
+* Bank account search should be available for transactions so that if this is the form of the query (a resident has phoned in and asked why their payment has gone missing) then the officer can find the payment in either 'all transactions' or 'suspense account' sections. The bank account data coming from Civica / Cedar may already be redacted. In which case, the last 3-4 digits of the account number should be searchable.
+* The name linked to the transaction is the name linked to the account of the sender. This could be a person or a company.
 
 ## API Specification
 
@@ -57,6 +68,8 @@ Allows to search on fields which do not exist only on platform APIs. It allows t
 - By person
 - Person Information
 - Tenure
+- Asset Information
+- Transactions
 - Alerts
 
 ** By Asset **
