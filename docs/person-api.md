@@ -124,6 +124,7 @@ HackIT proposal for Person data model based on the model proposed by Amido.
     "preferredSurname": "Kimakhe",
     "place of birth": "Rabat",
     "date of birth": "1989-10-11",
+    "date of death": "2021-10-11",
     "personTypes": [
       "Tenant"
     ],
