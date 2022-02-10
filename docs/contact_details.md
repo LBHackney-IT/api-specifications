@@ -69,15 +69,16 @@ description (under contactInformation)
 1. Person
 2. Organization
 
+## Api Endpoints
+- Get contact details by id
+- Create new contact details
+- Soft delete contact details
+
+
 ## Example payload
 
-https://app.swaggerhub.com/apis/Hackney/contactDetailsApi/1.0.0
+https://app.swaggerhub.com/apis-docs/Hackney/contactDetailsApi/1.0.0
 
-Each contact detail record (e.g. one phone number / a correspondence address / an email) will be a separate record, associated with the same targetId (person/organization id). Eg :If a person has 10 correspondence addresses then we will have 10 records with the same target id.
-
-![API](./doc-images/spec15.png)
-
-![API](./doc-images/spec16.png)
 ## Governance around Contact Details Data
 
 https://docs.google.com/document/d/124t3pPXvNaZ5VVo_SUXJeh6JTM5pchAVTnpIv2MXuno/edit#heading=h.bpe1osq9adg2
