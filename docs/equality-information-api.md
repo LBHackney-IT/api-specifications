@@ -65,71 +65,8 @@ In the second workshop, we discussed the necessity of the equalities information
 3. PATCH **/equality-information/{equality-information-id}**
 4. POST **/equality-information/{equality-information-id}**
 
-**Example payload**
-```
-{
-    "id": "45b919fa-22b4-11ec-9621-0242ac130002",
-    "targetId": "49b092d6-22b4-11ec-9621-0242ac130002",
-    "gender": {
-      "genderValue": "m",
-      "genderValueIfOther": "",
-      "genderDifferentToBirthSex": True
-    },
-    "nationality": "british",
-    "ethnicity": {
-      "ethnicGroupValue": "white",
-      "ethnicGroupValueIfOther": ""
-    },
-    "religionOrBelief": {
-      "religionOrBeliefValue": "christian",
-      "religionOrBeliefValueIfOther": ""
-    },
-    "sexualOrientation": {
-      "sexualOrientationValue": "heterosexual",
-      "sexualOrientationValueIfOther": ""
-    },
-    "marriageOrCivilPartnership": {
-      "married": True,
-      "civilPartnership": True
-    },
-    "pregnancyOrMaternity": [
-      {
-        "pregnancyDate": "2017-01-04", -- date entered by the user
-        "pregnancyValidUntil": "2019-10-04" -- datePregnancy + 2 years and 9 months
-      }
-    ],
-    "nationalInsuranceNumber": "NI111111A",
-    "languages": [
-        {
-            "language": "french",
-            "isPrimary": false
-        },
-        {
-            "language": "english",
-            "isPrimary": true
-        }
-    ],
-    "caringResponsibilities": {
-      "provideUnpaidCare": True,
-      "hoursSpentProvidingUnpaidCare": "fiveToNineHours"
-    },
-    "disabled": True,
-    "communicationRequirements": [
-        "signLanguage",
-        "interpreterNeeded",
-        "largePrint"
-    ],
-    "economicSituation": {
-      "economicSituationValue": "employedFullTime",
-      "economicSituationValueIfOther": ""
-    },
-    "homeSituation": {
-      "homeSituationValue": "temporaryAccommodationPlacedByHackneyCouncil",
-      "homeSituationValueIfOther": ""
-    },
-    "armedForces": "aServingMemberOfTheArmedForces"
-}
-```
+**Payload**
+https://app.swaggerhub.com/apis-docs/Hackney/equality-information-api/1.0.0.0 
 
 The following fields will store codes that come from the reference data:
 * genderValue

@@ -89,109 +89,14 @@ https://ideaflip.com/b/tk5mzrgytdri/
 11. Homelessness cases (TAPL)?
 12. Communication details
 
-### Endpoints to be created for core person microservice
-
-1. GET **/persons/?**
-
-    a. Query parameters:
-
-        i.      First name
-        ii.     Last name
-        iii.    Address?
-        iv.     Date of Birth
-        v.      NI?
-2. GET **/persons/{person-id}**
-3. PATCH **/persons/{person-id}**
-4. POST **/persons/{person-id}**
+### API Endpoints
+- Get person by id
+- Create person
+- Updated person by id 
 
 
-Proposed Data Model by Amido:
-
-https://docs.google.com/document/d/1DjZiUw8yzN3OxlQOudtiSdwbG84coGKI8eYIWJv-o8g/edit
-HackIT proposal for Person data model based on the model proposed by Amido.
-
-**Example payload**
-```
-{
-    "id": "TWVoZGlLaW1ha2hlCg==",
-    "title": "Mr",
-    "firstName": "Mehdi",
-    "middleName": "",
-    "surname": "Kimakhe",
-    "preferredTitle": "Mr"
-    "preferredFirstName": "Mehdi",
-    "preferredMiddleName": "",
-    "preferredSurname": "Kimakhe",
-    "place of birth": "Rabat",
-    "date of birth": "1989-10-11",
-    "date of death": "2021-10-11",
-    "personTypes": [
-      "Tenant"
-    ],
-    "tenures": [
-      {
-        "id": "6f22e9ae3e8a4e0eaf46db02eb87f8e6",
-        "type": "SECURE",
-        "startDate": "12/01/2021",
-        "endDate": "23/07/2021",
-        "assetFullAddress": "1 Hillman St, Hackney, E8 1DY",
-        "assetId": "6f22e9ae3e8a4e0eaf46db02eb87f8e6",
-        "uprn": "1234567890",
-        "isActive": false,
-        "paymentReference": "string",
-        "propertyReference": "string"
-      }
-    ],
-    "reason": "New tenant to Hackney's system",
-
-    "links": [
-            {
-                "href": "http://vulnerabilities/TWVoZGlLaW1ha2hlCg==",
-                "rel": "vulnerabilities",
-                "type" : "GET"
-            },
-            {
-                "href": "http://activities/TWVoZGlLaW1ha2hlCg==",
-                "rel": "activities",
-                "type" : "GET"
-            },
-            {
-                "href": "http://socialcare/TWVoZGlLaW1ha2hlCg==",
-                "rel": "socialcare",
-                "type" : "GET"
-            },
-            {
-                "href": "http://tenure/TWVoZGlLaW1ha2hlCg==",
-                "rel": "tenure",
-                "type" : "GET"
-            },
-            {
-                "href": "http://notes/TWVoZGlLaW1ha2hlCg==",
-                "rel": "notes",
-                "type" : "GET"
-            },
-            {
-                "href": "http://cautionarycontact/TWVoZGlLaW1ha2hlCg==",
-                "rel": "cautionarycontact",
-                "type" : "GET"
-            },
-            {
-                "href": "http://correspondenceaddresses/TWVoZGlLaW1ha2hlCg==",
-                "rel": "correspondenceaddresses",
-                "type" : "GET"
-            },
-    etc…...
-
-    ]
-
-}
-```
-
-**Core person API microservice: Nice to have**
-
-- A way to deliver the links based on what a user is allowed to link to or what is available (eg if a service is down the link doesn’t get returned).  This would add a layer of complexity to the API but would make the front end implementation easier.
-
-- Links would be built using a cross-references table
+**Payload**
+https://app.swaggerhub.com/apis-docs/Hackney/personAPI/1.0.0#/ 
 
 ### Architecture Diagram
 ![Platform API vs Service API comparison](./doc-images/person_api_arch_diagram.png)
