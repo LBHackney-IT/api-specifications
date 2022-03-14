@@ -45,28 +45,30 @@ GET /workflow
 
 #### Response payload
 
+```
 [
-{
-"id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-"workflowName": "string",
-"rules": [
-{
-"ruleName": "string",
-"operator": "string",
-"errorMessage": "string",
-"enabled": true,
-"ruleExpressionType": 0,
-"rules": [
-null
-],
-"expression": "string",
-"successEvent": "string"
-}
-],
-"createdAt": "2022-02-18T21:09:17.388Z",
-"lastUpdatedAt": "2022-02-18T21:09:17.388Z"
-}
+  {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "workflowName": "string",
+    "rules": [
+    {
+      "ruleName": "string",
+      "operator": "string",
+      "errorMessage": "string",
+      "enabled": true,
+      "ruleExpressionType": 0,
+      "rules": [
+        null
+      ],
+      "expression": "string",
+      "successEvent": "string"
+    }
+  ],
+    "createdAt": "2022-02-18T21:09:17.388Z",
+    "lastUpdatedAt": "2022-02-18T21:09:17.388Z"
+  }
 ]
+```
 
 #### Get single workflow request
 
@@ -76,26 +78,28 @@ GET /workflow/{workflowName}
 
 #### Response payload
 
+```
 {
-"id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-"workflowName": "string",
-"rules": [
-{
-"ruleName": "string",
-"operator": "string",
-"errorMessage": "string",
-"enabled": true,
-"ruleExpressionType": 0,
-"rules": [
-null
-],
-"expression": "string",
-"successEvent": "string"
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "workflowName": "string",
+  "rules": [
+    {
+      "ruleName": "string",
+      "operator": "string",
+      "errorMessage": "string",
+      "enabled": true,
+      "ruleExpressionType": 0,
+      "rules": [
+        null
+      ],
+      "expression": "string",
+      "successEvent": "string"
+    }
+  ],
+    "createdAt": "2022-02-18T21:04:47.013Z",
+    "lastUpdatedAt": "2022-02-18T21:04:47.013Z"
 }
-],
-"createdAt": "2022-02-18T21:04:47.013Z",
-"lastUpdatedAt": "2022-02-18T21:04:47.013Z"
-}
+```
 
 #### Post workflow request
 
@@ -105,46 +109,50 @@ POST /workflow
 
 #### Request payload
 
+```
 {
-"workflowName": "string",
-"rules": [
-{
-"ruleName": "string",
-"operator": "string",
-"errorMessage": "string",
-"enabled": true,
-"ruleExpressionType": 0,
-"rules": [
-null
-],
-"expression": "string",
-"successEvent": "string"
+  "workflowName": "string",
+  "rules": [
+  {
+    "ruleName": "string",
+    "operator": "string",
+    "errorMessage": "string",
+    "enabled": true,
+    "ruleExpressionType": 0,
+    "rules": [
+        null
+    ],
+    "expression": "string",
+    "successEvent": "string"
+  }
+  ]
 }
-]
-}
+```
 
 #### Response payload
 
+```
 {
-"id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-"workflowName": "string",
-"rules": [
-{
-"ruleName": "string",
-"operator": "string",
-"errorMessage": "string",
-"enabled": true,
-"ruleExpressionType": 0,
-"rules": [
-null
-],
-"expression": "string",
-"successEvent": "string"
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "workflowName": "string",
+  "rules": [
+    {
+      "ruleName": "string",
+      "operator": "string",
+      "errorMessage": "string",
+      "enabled": true,
+      "ruleExpressionType": 0,
+      "rules": [
+        null
+      ],
+      "expression": "string",
+      "successEvent": "string"
+    }
+  ],
+  "createdAt": "2022-02-18T21:11:05.432Z",
+  "lastUpdatedAt": "2022-02-18T21:11:05.432Z"
 }
-],
-"createdAt": "2022-02-18T21:11:05.432Z",
-"lastUpdatedAt": "2022-02-18T21:11:05.432Z"
-}
+```
 
 #### Patch workflow request
 
@@ -154,43 +162,47 @@ PATCH /workflow/{workflowName}
 
 #### Request payload
 
+```
 [
-{
-"ruleName": "string",
-"operator": "string",
-"errorMessage": "string",
-"enabled": true,
-"ruleExpressionType": 0,
-"rules": [
-null
-],
-"expression": "string",
-"successEvent": "string"
-}
+  {
+    "ruleName": "string",
+    "operator": "string",
+    "errorMessage": "string",
+    "enabled": true,
+    "ruleExpressionType": 0,
+    "rules": [
+      null
+    ],
+    "expression": "string",
+    "successEvent": "string"
+  }
 ]
+```
 
 #### Response payload
 
+```
 {
-"id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-"workflowName": "string",
-"rules": [
-{
-"ruleName": "string",
-"operator": "string",
-"errorMessage": "string",
-"enabled": true,
-"ruleExpressionType": 0,
-"rules": [
-null
-],
-"expression": "string",
-"successEvent": "string"
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "workflowName": "string",
+  "rules": [
+    {
+      "ruleName": "string",
+      "operator": "string",
+      "errorMessage": "string",
+      "enabled": true,
+      "ruleExpressionType": 0,
+      "rules": [
+        null
+      ],
+      "expression": "string",
+      "successEvent": "string"
+    }
+  ],
+  "createdAt": "2022-02-18T21:15:00.809Z",
+  "lastUpdatedAt": "2022-02-18T21:15:00.809Z"
 }
-],
-"createdAt": "2022-02-18T21:15:00.809Z",
-"lastUpdatedAt": "2022-02-18T21:15:00.809Z"
-}
+```
 
 #### Post rule execution request
 
@@ -200,32 +212,36 @@ POST /rule/execute
 
 #### Request payload
 
+```
 [
-{
-"inputRuleName": "string",
-"parameters": {
-"additionalProp1": {},
-"additionalProp2": {},
-"additionalProp3": {}
-}
-}
+  {
+    "inputRuleName": "string",
+    "parameters": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    }
+  }
 ]
+```
 
 #### Response payload
 
+```
 {
-"rule": {
-"ruleName": "string",
-"operator": "string",
-"errorMessage": "string",
-"enabled": true,
-"ruleExpressionType": 0,
-"rules": [
-null
-],
-"expression": "string",
-"successEvent": "string"
-},
-"isSuccess": true,
-"exceptionMessage": "string"
+  "rule": {
+    "ruleName": "string",
+    "operator": "string",
+    "errorMessage": "string",
+    "enabled": true,
+    "ruleExpressionType": 0,
+    "rules": [
+      null
+    ],
+    "expression": "string",
+    "successEvent": "string"
+  },
+  "isSuccess": true,
+  "exceptionMessage": "string"
 }
+```
