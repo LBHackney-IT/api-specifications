@@ -246,7 +246,16 @@ Internal Server Error
                       "numberOfLifts": "1",
                       "numberOfLivingRooms": "1",
                       "windowType": "DBL",
-                      "yearConstructed": "1978"
+                      "yearConstructed": "1978",
+                      "numberOfBedSpaces": "4",
+                      "numberOfCots": "1",
+                      "showerRoomAmount": "0",
+                      "bathroomAmount": "1",
+                      "assetPropertyFolderLink": "",
+                      "epcExpiryDate": "2023-03-14",
+                      "fireSafetyCertificateExpiryDate": "2023-01-10",
+                      "gasSafetyCertificateExpiryDate": "2022-09-25",
+                      "elecCertificateExpiryDate": "2022-06-01"
                       },
                       "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
                       “parentAssetIds”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
