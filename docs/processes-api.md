@@ -171,10 +171,10 @@ PATCH /api/v1/process/{process-name}/{id}/{process-trigger}
 
 ```
 
-###### PATCH Endpoint to support reassignment:
+###### PATCH by id Endpoint:
 
 ```json
-PATCH /api/v1/process/{process-name}/{id}/
+PATCH /api/v1/process/{id}/
 
 {
   "formData": {
