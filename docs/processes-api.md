@@ -174,7 +174,7 @@ PATCH /api/v1/process/{process-name}/{id}/{process-trigger}
 ###### PATCH by id Endpoint:
 
 ```json
-PATCH /api/v1/process/{id}/
+PATCH /api/v1/process/{process-name}/{id}/
 
 {
   "formData": {
