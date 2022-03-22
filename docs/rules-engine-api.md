@@ -57,9 +57,7 @@ GET /workflow
       "errorMessage": "string",
       "enabled": true,
       "ruleExpressionType": 0,
-      "rules": [
-        null
-      ],
+      "rules": [],
       "expression": "string",
       "successEvent": "string"
     }
@@ -89,9 +87,7 @@ GET /workflow/{workflowName}
       "errorMessage": "string",
       "enabled": true,
       "ruleExpressionType": 0,
-      "rules": [
-        null
-      ],
+      "rules": [],
       "expression": "string",
       "successEvent": "string"
     }
@@ -119,9 +115,7 @@ POST /workflow
     "errorMessage": "string",
     "enabled": true,
     "ruleExpressionType": 0,
-    "rules": [
-        null
-    ],
+    "rules": [],
     "expression": "string",
     "successEvent": "string"
   }
@@ -142,9 +136,7 @@ POST /workflow
       "errorMessage": "string",
       "enabled": true,
       "ruleExpressionType": 0,
-      "rules": [
-        null
-      ],
+      "rules": [],
       "expression": "string",
       "successEvent": "string"
     }
@@ -170,9 +162,7 @@ PATCH /workflow/{workflowName}
     "errorMessage": "string",
     "enabled": true,
     "ruleExpressionType": 0,
-    "rules": [
-      null
-    ],
+    "rules": [],
     "expression": "string",
     "successEvent": "string"
   }
@@ -192,9 +182,7 @@ PATCH /workflow/{workflowName}
       "errorMessage": "string",
       "enabled": true,
       "ruleExpressionType": 0,
-      "rules": [
-        null
-      ],
+      "rules": [],
       "expression": "string",
       "successEvent": "string"
     }
@@ -235,9 +223,7 @@ POST /rule/execute
     "errorMessage": "string",
     "enabled": true,
     "ruleExpressionType": 0,
-    "rules": [
-      null
-    ],
+    "rules": [],
     "expression": "string",
     "successEvent": "string"
   },
