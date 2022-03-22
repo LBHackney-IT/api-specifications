@@ -10,7 +10,7 @@ module.exports = {
       label: 'Specifications',
       items: ['activities_api', 'asset_info', 'configuration',
               'contact_details', 'housing_search', 'notes', 'organisations',
-              'person-api', 'search_api', 'tenure_api', 'accounts-api', 'notifications-api', 'patches-api', 'equality-information-api', 'processes-api'],
+              'person-api', 'search_api', 'tenure_api', 'accounts-api', 'notifications-api', 'patches-api', 'rules-engine-api', 'equality-information-api', 'processes-api'],
     },
     {
       type: 'category',
