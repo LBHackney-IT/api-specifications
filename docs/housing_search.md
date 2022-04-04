@@ -12,7 +12,8 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 
 ## Vision
 
-- A reliable and efficient search service, that allows for free-text and fuzzy search for people and properties.
+- A reliable and efficient search service, that allows for free-text and fuzzy/exact search for people and properties.
+- The reason that an exact search is required is as follows: Searching for a multi-word address 1 will match on each word and therefore return far more results than are consumable by any reasonable service or human - for example: searching for "Allerdale House" using the wildcard search returns 15554 results. The reason for this is that the search will include not only results matching "Allerdale House" but also match "Allerdale" and "House" individually. The records are not ordered by relevance, and even if they were, 15k+ is not a reasonable amount of hits for a specific road name.
 - A microservice that does not impact user experience with poor performance related to searching data from multiple data domains.
 
 ## User Needs
@@ -23,7 +24,7 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 
 ** Search by : **
 1. Person - First name, Middle name, Last name
-2. Asset - Address line 1, Postcode, Asset type
+2. Asset - Address line 1 (wildcard search), Address line 1 (exact match), Postcode, Asset type
 3. Tenure - Payment Reference, FullAddress of TenuredAsset , Household Members FullName  
 4. Transactions - Sender name, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount  
 
@@ -33,12 +34,20 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 * A result should act as a navigation tool to deeper more meaningful information.
 * Search will most likely be the first thing a user does in order to find information.
 * Search should be available for any data set (property, transaction, document).
+* The search results should be concise enough to be digestable in a single workflow and not excessive
+* If the exact match is not required then false will be passed and get the current result
 * Bank account search should be available for transactions so that if this is the form of the query (a resident has phoned in and asked why their payment has gone missing) then the officer can find the payment in either 'all transactions' or 'suspense account' sections. The bank account data coming from Civica / Cedar may already be redacted. In which case, the last 3-4 digits of the account number should be searchable.
 * The name linked to the transaction is the name linked to the account of the sender. This could be a person or a company.
 
 ## API Specification
 
 https://app.swaggerhub.com/apis/Hackney/housingSearchApi/1.0.0
+
+Proposal for additional boolean parameter 'exact_match" (indicated above to narrow results for Address Line 1):
+
+https://app.swaggerhub.com/apis/Hackney/housingSearchApi/1.0.1
+
+
 
 ## Architecture diagram 
 
