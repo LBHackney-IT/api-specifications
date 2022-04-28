@@ -296,8 +296,7 @@ Not found
                      "sleepingArrangementNotes" : "Ground Floor",
                      "numberOfShowers" : 4,
                      "kitchenNotes" : "Shared, on 1st and 3rd floors",
-                     "isStepFree" : true,
-                     "supplierInformation" : [Name: Finefair Consultancy Ltd, Phone: 077 1234 5678, Email: alex@finefair.co.uk"
+                     "isStepFree" : true
               },
               "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
               "parentAssetIds": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
