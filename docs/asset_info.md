@@ -121,17 +121,18 @@ The workshop was based on identifying different sources that might contribute to
 
 ** Purpose: ** Gets one or more properties from the properties table.  Requests can be made by specifying a ref path parameter or searching for properties based on a series of parameters.
 
-Endpoint URL:
-                  /assets
-		              /assets/{prop-ref}
-		              /assets?llpg-ref={llpg-ref}
-		              /assets/?postcode=E8 1DY
+Endpoint URLs:
 
-                  Method: GET (list, search, view)
-                  Request Querystring Parameters:
-                  postcode - specifies the postcode on which to base the search for requests.
-                  prop-ref - provides unique property reference
-                  llpg-ref - provides LLPG reference.
+       /assets
+       /assets/{prop-ref}
+       /assets?llpg-ref={llpg-ref}
+       /assets/?postcode=E8 1DY
+
+       Method: GET (list, search, view)
+       Request Querystring Parameters:
+       postcode - specifies the postcode on which to base the search for requests.
+       prop-ref - provides unique property reference
+       llpg-ref - provides LLPG reference.
   Request Path Parameter:
   Id - specifies the Id of a specific help request record to return
 - Response:
@@ -184,82 +185,87 @@ Response:
 Asset Updated
 ![API](./doc-images/spec13.png)
 
-}
-
 404
 Not found
-                      {
-                      	“DevErrorMessages  ”: [“validation errors”],
-                      	“UserErrorMessage”: “Your item could not be updated for the following  
-                             reasons...”
-                      }
+
+       {
+       "DevErrorMessages  ": ["validation errors"],
+       "UserErrorMessage": "Your item could not be updated for the following  
+              reasons..."
+       }
 500
-Internal Server Error
+
+       Internal Server Error
 
 ## Example payload
 
-                      {
-                      “Id”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
-                      "assetId": "00007918",
-                      “assetType”: “Garage | Dwelling | Estate ...”,
-                      "assetLocation": {
-                      	“parentAssets”: [
-                      {
-                      		“id”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
-                      		“type”: “sub-block”,
-                      			“name”: “Newcombe House (1-18)”
-                      },
-                      {
-                      			“id”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
-                      		“type”: “block”,
-                      "name": "Newcombe House (1-35)"
-                      },
-                      {
-                      "id": “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
-                      		“type”: “estate”,
-                      "name": "Newcombe House Estate Powell Road"
-                      }
-                      ],
-                      "floor": "G",
-                      "totalBlockFloors": "5"
-                      },
-                      "assetAddress": {
-                      "uprn": "100021065786",
-                      "addressLine1": "Powell Road",
-                      "addressLine2": "Hackney",
-                      "addressLine3": "London",
-                      "addressLine4": "",
-                      "postCode": "E5 8DH",
-                      "postPreamble": "1 Newcome House"
-                      },
-                      "assetManagement": {
-                      "agent": "HAH",
-                      "areaOfficeName": "Clapton Panel Area Team",
-                      "isCouncilProperty": false,
-                      "managingOrganisation": "LBH", -- Hackney or TMO
-                      “managingOrganisationId”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”
-                      "owner": "London Borough of Hackney",
-                      “isTMOManaged”: true
-                      },
-                      "assetCharacteristics": {
-                      "numberOfBedRooms": "2",
-                      "numberOfLifts": "1",
-                      "numberOfLivingRooms": "1",
-                      "windowType": "DBL",
-                      "yearConstructed": "1978"
-                      },
-                      "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-                      “parentAssetIds”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
- “Links”:  [
-
-“Activities”:  ”https://activitiesapi.hackney.gov.uk/propertyactivities/[propertyId]”,
-
- “Documents”:  ”https://documentsapi.hackney.gov.uk?type=property&id=[propertyId]”,
-
- “EPC Certificate” : “https://assetapi.hackney.gov.uk/epc-cert/[00001111]”
-
- “Tenancies”: “https://tenanciesapi.hackney.gov.uk/tenancies[propertyId]”,
-
- “Facilities”: “https://assetsapi.hackney.gov.uk/facilities/[00001111]”
-]
-}
+       {
+              "Id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+              "assetId": "00007918",
+              "assetType": "Garage | Dwelling | Estate ...",
+              "assetLocation": {
+                     "parentAssets": [
+                     {
+                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                            "type": "sub-block",
+                            "name": "Newcombe House (1-18)"
+                     },
+                     {
+                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                            "type": "block",
+                            "name": "Newcombe House (1-35)"
+                     },
+                     {
+                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                            "type": "estate",
+                            "name": "Newcombe House Estate Powell Road"
+                     }
+                     ],
+                     "floor": "G",
+                     "totalBlockFloors": "5"
+              },
+              "assetAddress": {
+                     "uprn": "100021065786",
+                     "addressLine1": "Powell Road",
+                     "addressLine2": "Hackney",
+                     "addressLine3": "London",
+                     "addressLine4": "",
+                     "postCode": "E5 8DH",
+                     "postPreamble": "1 Newcome House"
+              },
+              "assetManagement": {
+                     "agent": "HAH",
+                     "areaOfficeName": "Clapton Panel Area Team",
+                     "isCouncilProperty": false,
+                     "managingOrganisation": "LBH, -- Hackney or TMO",
+                     "managingOrganisationId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                     "owner": "London Borough of Hackney",
+                     "isTMOManaged": true
+              },
+              "assetCharacteristics": {
+                     "numberOfBedRooms": "2",
+                     "numberOfLifts": "1",
+                     "numberOfLivingRooms": "1",
+                     "windowType": "DBL",
+                     "yearConstructed": "1978"
+              },
+              "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+              "parentAssetIds": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+              "Links":  [
+                     {
+                            "Activities":  "https://activitiesapi.hackney.gov.uk/propertyactivities/[propertyId]"
+                     },
+                     {
+                            "Documents":  "https://documentsapi.hackney.gov.uk?type=property&id=[propertyId]"
+                     },
+                     {
+                            "EPC Certificate" : "https://assetapi.hackney.gov.uk/epc-cert/[00001111]"
+                     },
+                     {
+                            "Tenancies": "https://tenanciesapi.hackney.gov.uk/tenancies[propertyId]"
+                     },
+                     {
+                            "Facilities": "https://assetsapi.hackney.gov.uk/facilities/[00001111]"
+                     }
+              ]
+       }
