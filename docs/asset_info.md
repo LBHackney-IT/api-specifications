@@ -107,7 +107,7 @@ The workshop was based on identifying different sources that might contribute to
 
 We covered the need for temporary accomodation assets to have new fields introduced along with a discussion around the relationship between assetTypes hotels/hostels and their children rooms.
 
-Below is the proposal link link to all the new fields.
+Below is the proposal link to all the new fields.
 
 **https://docs.google.com/document/d/1gUub2ye7bnvPO42hc9GqDy2eYCWtR1JRaL78fBKUDv0**
 
