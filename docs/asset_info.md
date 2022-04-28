@@ -95,10 +95,21 @@ I can see the status of the property (whether the property belongs to a block/es
 # Workshop outcome
 ## Workshop 1
 
-** Summary **
+**Summary**
+
 The workshop was based on identifying different sources that might contribute towards the Asset Information API. We also identified different types of assets based on their classifications and usage and their references in individual MFTH workstreams.
 
-** https://ideaflip.com/edit/d7zfwtixmyhv/zGJtvUcZSq52 **
+**https://ideaflip.com/edit/d7zfwtixmyhv/zGJtvUcZSq52**
+
+## Workshop 26/04/2022
+
+**Summary**
+
+We covered the need for temporary accomodation assets to have new fields introduced along with a discussion around the relationship between assetTypes hotels/hostels and their children rooms.
+
+Below is the proposal link link to all the new fields.
+
+**https://docs.google.com/document/d/1gUub2ye7bnvPO42hc9GqDy2eYCWtR1JRaL78fBKUDv0**
 
 # Questions to ask
 
