@@ -97,3 +97,9 @@ Allows to search on fields which do not exist only on platform APIs. It allows t
 - Tenure
 - Person Information
 - Alert
+
+### Workshop 26/04/2022
+
+We discussed the need for filter parameters without searchText so that we can refine lists based purely on the filter params.
+It was decided to use the `/search/assets/all` to produce this outcome.
+Reference doc can be found [here](https://docs.google.com/document/d/1ZMa2dKqV5XfgFiyA0RL9hCqy1QLoo53VnOJPpGxQA_s/edit#heading=h.dx6cih64yr6k)
