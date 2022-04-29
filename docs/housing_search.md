@@ -38,7 +38,8 @@ Searching is achieved by providing `searchText` as a string parameter.
 ### Filtering
 
 Filter parameters will be added to
-`/search/assets/all` and searchText will be optional giving the ability to filter of specific fields without the need to search by text.
+`/search/assets/all` and searchText will be optional giving the ability to filter of specific fields without the need to search by text. 
+We propose to enforce a rule of at least one parameter to mitigate against the API being abused and returning every asset.
 
 **Filter by :** 
 1. Asset - assetStatus, numberOfBedrooms, numberOfBedSpaces, numberOfCots, groundFloor, privateBathroom, privateKitchen, stepFree, isTemporaryAccomodation, parentAssetId
