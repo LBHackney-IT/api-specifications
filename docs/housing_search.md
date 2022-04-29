@@ -25,11 +25,20 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 - I want the ability to filter the details of the results returned in an asset search
 - So that I can easily look through the different results and find accommodation matching my requirements
 
+### Searching 
+
+Searching is achieved by providing `searchText` as a string parameter.
+
 **Search by :**
 1. Person - First name, Middle name, Last name
 2. Asset - Address line 1, Postcode, Asset type
 3. Tenure - Payment Reference, FullAddress of TenuredAsset , Household Members FullName  
 4. Transactions - Sender name, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount  
+
+### Filtering
+
+Filter parameters will be added to
+`/search/assets/all` and searchText will be optional giving the ability to filter of specific fields without the need to search by text.
 
 **Filter by :** 
 1. Asset - assetStatus, numberOfBedrooms, numberOfBedSpaces, numberOfCots, groundFloor, privateBathroom, privateKitchen, stepFree, isTemporaryAccomodation, parentAssetId
