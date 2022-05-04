@@ -170,3 +170,29 @@ PATCH /api/v1/process/{process-name}/{id}/{process-trigger}
 }
 
 ```
+
+###### PATCH by id Endpoint:
+
+```json
+PATCH /api/v1/process/{process-name}/{id}/
+
+{
+  "formData": {
+    "field1": true,
+    "field2": "string",
+    "field3": 1,
+    "field4": "string",
+    "field5": false
+  },
+  "documents": [
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e7",
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e8"
+  ],
+  "assignment": {
+    "type": "email",
+    "value": "estatesafety@hackney.gov.uk"
+  }
+}
+
+```
