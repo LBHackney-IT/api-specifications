@@ -1,6 +1,6 @@
 ---
 id: activities_api
-title: Activities API
+title: Activity History API
 ---
 
 ## Purpose:
@@ -19,7 +19,7 @@ Our goal is to ensure we build reusable components as part of the MFTH stream an
 
 ## Our users and their needs
 
-**As a service user I would like to see the Activities so that: **
+**As a service user I would like to see the Activity history so that: **
 - I can see my rent being charged
 - I can see my housing benefits
 - I can see payments which have previously been made
@@ -68,12 +68,12 @@ endpoints are relevant;
 
 Summary
 
-The workshop was based on identifying different sources that might contribute towards the Activities API. As activities are not representing the complete history against the entity and each dataset has their own wrapper around the activities model it will be best if we have a single repository to handle all activities with filters based on the domain and entities we are dealing with.
+The workshop was based on identifying different sources that might contribute towards the Activity History API. As activities are not representing the complete history against the entity and each dataset has their own wrapper around the activities model it will be best if we have a single repository to handle all activities with filters based on the domain and entities we are dealing with.
 
 ** https://ideaflip.com/b/5xu3waqetkxg/ **
 
-## Benefits of centralised Activities repository
-1. Single view of all Activities
+## Benefits of centralised Activity history repository
+1. Single view of all Activity history
 2. Activities model
 3. Better organisation of data
 4. Improve analysis
@@ -87,20 +87,15 @@ The workshop was based on identifying different sources that might contribute to
 Endpoint URL:
                get/activities
 
-		          get/activities/{id}
-
-		          get/activities/?Author_ID=TWVoZGlLaW1ha2hlCg==
+		          get/activities/?targetId =TWVoZGlLaW1ha2hlCg==
 
                   Method: GET (list, search, view)
 
 Request Querystring Parameters:
 
-- Author - specifies the author of the notes
-- Author ID
-- Author full name
-- Author email
-- Request Path Parameter:
-- Id - specifies the Id of a specific help request record to return
+- Target ID (to specify which record to retrieve activity history for, e.g. a specific tenure)
+- Pagination token
+- Page size
 - Response:
 - 200
 - One or more activity
@@ -113,7 +108,7 @@ If item was not found
 
 ## Post Activities
 Purpose: Creates one or more Activities.
-Endpoint URL: activities/
+Endpoint URL: activityHistory/
 
 Method: Post
 Request post object:
