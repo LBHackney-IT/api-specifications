@@ -260,17 +260,14 @@ Not found
                      "councilTaxLiability" : "Void only",
                      "lhaArea" : "Inner East London",
                      "isTemporaryAccomodation" : true,
-                     "readyToLetDate" : true,
-                     "assetStatus" : "House",
-                     "optionToTax" : true
+                     "readyToLetDate" : true
               },
               "assetCharacteristics": {
-                     "numberOfBedRooms": "2",
+                     "numberOfBedrooms": "2",
                      "numberOfLifts": "1",
                      "numberOfLivingRooms": "1",
                      "windowType": "DBL",
                      "yearConstructed": "1978",
-                     "numberOfShowerRooms" : 4,
                      "assetPropertyFolderLink" : "https://drive.google.com/drive/folders/1Vo7xUYx-wRNR1NTjE4pJGV07DnYirflU",
                      "epcExpiryDate" : "31-12-2030",
                      "fireSafetyCertificateExpiryDate" : "31-12-2030",
