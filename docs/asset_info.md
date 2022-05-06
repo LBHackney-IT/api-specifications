@@ -95,10 +95,21 @@ I can see the status of the property (whether the property belongs to a block/es
 # Workshop outcome
 ## Workshop 1
 
-** Summary **
+**Summary**
+
 The workshop was based on identifying different sources that might contribute towards the Asset Information API. We also identified different types of assets based on their classifications and usage and their references in individual MFTH workstreams.
 
-** https://ideaflip.com/edit/d7zfwtixmyhv/zGJtvUcZSq52 **
+**https://ideaflip.com/edit/d7zfwtixmyhv/zGJtvUcZSq52**
+
+## Workshop 26/04/2022
+
+**Summary**
+
+We covered the need for temporary accomodation assets to have new fields introduced along with a discussion around the relationship between assetTypes hotels/hostels and their children rooms.
+
+Below is the proposal link to all the new fields.
+
+**https://docs.google.com/document/d/1gUub2ye7bnvPO42hc9GqDy2eYCWtR1JRaL78fBKUDv0**
 
 # Questions to ask
 
@@ -121,17 +132,18 @@ The workshop was based on identifying different sources that might contribute to
 
 ** Purpose: ** Gets one or more properties from the properties table.  Requests can be made by specifying a ref path parameter or searching for properties based on a series of parameters.
 
-Endpoint URL:
-                  /assets
-		              /assets/{prop-ref}
-		              /assets?llpg-ref={llpg-ref}
-		              /assets/?postcode=E8 1DY
+Endpoint URLs:
 
-                  Method: GET (list, search, view)
-                  Request Querystring Parameters:
-                  postcode - specifies the postcode on which to base the search for requests.
-                  prop-ref - provides unique property reference
-                  llpg-ref - provides LLPG reference.
+       /assets
+       /assets/{prop-ref}
+       /assets?llpg-ref={llpg-ref}
+       /assets/?postcode=E8 1DY
+
+       Method: GET (list, search, view)
+       Request Querystring Parameters:
+       postcode - specifies the postcode on which to base the search for requests.
+       prop-ref - provides unique property reference
+       llpg-ref - provides LLPG reference.
   Request Path Parameter:
   Id - specifies the Id of a specific help request record to return
 - Response:
@@ -184,82 +196,122 @@ Response:
 Asset Updated
 ![API](./doc-images/spec13.png)
 
-}
-
 404
 Not found
-                      {
-                      	“DevErrorMessages  ”: [“validation errors”],
-                      	“UserErrorMessage”: “Your item could not be updated for the following  
-                             reasons...”
-                      }
+
+       {
+       "DevErrorMessages  ": ["validation errors"],
+       "UserErrorMessage": "Your item could not be updated for the following  
+              reasons..."
+       }
 500
-Internal Server Error
+
+       Internal Server Error
 
 ## Example payload
 
-                      {
-                      “Id”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
-                      "assetId": "00007918",
-                      “assetType”: “Garage | Dwelling | Estate ...”,
-                      "assetLocation": {
-                      	“parentAssets”: [
-                      {
-                      		“id”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
-                      		“type”: “sub-block”,
-                      			“name”: “Newcombe House (1-18)”
-                      },
-                      {
-                      			“id”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
-                      		“type”: “block”,
-                      "name": "Newcombe House (1-35)"
-                      },
-                      {
-                      "id": “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
-                      		“type”: “estate”,
-                      "name": "Newcombe House Estate Powell Road"
-                      }
-                      ],
-                      "floor": "G",
-                      "totalBlockFloors": "5"
-                      },
-                      "assetAddress": {
-                      "uprn": "100021065786",
-                      "addressLine1": "Powell Road",
-                      "addressLine2": "Hackney",
-                      "addressLine3": "London",
-                      "addressLine4": "",
-                      "postCode": "E5 8DH",
-                      "postPreamble": "1 Newcome House"
-                      },
-                      "assetManagement": {
-                      "agent": "HAH",
-                      "areaOfficeName": "Clapton Panel Area Team",
-                      "isCouncilProperty": false,
-                      "managingOrganisation": "LBH", -- Hackney or TMO
-                      “managingOrganisationId”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”
-                      "owner": "London Borough of Hackney",
-                      “isTMOManaged”: true
-                      },
-                      "assetCharacteristics": {
-                      "numberOfBedRooms": "2",
-                      "numberOfLifts": "1",
-                      "numberOfLivingRooms": "1",
-                      "windowType": "DBL",
-                      "yearConstructed": "1978"
-                      },
-                      "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-                      “parentAssetIds”: “6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6”,
- “Links”:  [
-
-“Activities”:  ”https://activitiesapi.hackney.gov.uk/propertyactivities/[propertyId]”,
-
- “Documents”:  ”https://documentsapi.hackney.gov.uk?type=property&id=[propertyId]”,
-
- “EPC Certificate” : “https://assetapi.hackney.gov.uk/epc-cert/[00001111]”
-
- “Tenancies”: “https://tenanciesapi.hackney.gov.uk/tenancies[propertyId]”,
-
- “Facilities”: “https://assetsapi.hackney.gov.uk/facilities/[00001111]”
-]
-}
+       {
+              "Id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+              "assetId": "00007918",
+              "assetType": "Garage | Dwelling | Estate ...",
+              "assetLocation": {
+                     "parentAssets": [
+                     {
+                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                            "type": "sub-block",
+                            "name": "Newcombe House (1-18)"
+                     },
+                     {
+                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                            "type": "block",
+                            "name": "Newcombe House (1-35)"
+                     },
+                     {
+                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                            "type": "estate",
+                            "name": "Newcombe House Estate Powell Road"
+                     }
+                     ],
+                     "floor": "G",
+                     "totalBlockFloors": "5"
+              },
+              "assetAddress": {
+                     "uprn": "100021065786",
+                     "addressLine1": "Powell Road",
+                     "addressLine2": "Hackney",
+                     "addressLine3": "London",
+                     "addressLine4": "",
+                     "postCode": "E5 8DH",
+                     "postPreamble": "1 Newcome House"
+              },
+              "assetManagement": {
+                     "agent": "HAH",
+                     "areaOfficeName": "Clapton Panel Area Team",
+                     "isCouncilProperty": false,
+                     "managingOrganisation": "LBH, -- Hackney or TMO",
+                     "managingOrganisationId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                     "owner": "London Borough of Hackney",
+                     "isTMOManaged": true,
+                     "propertyOccupiedStatus" : "Vacant",
+                     "isNoRepairsMaintenance" : true,
+                     "fundingSource" : "TA",
+                     "costCentre" : "D0720",
+                     "councilTaxType" : "House in multiple occupancy (HMO)",
+                     "councilTaxLiability" : "Void only",
+                     "lhaArea" : "Inner East London",
+                     "isTemporaryAccomodation" : true,
+                     "readyToLetDate" : true
+              },
+              "assetCharacteristics": {
+                     "numberOfBedrooms": "2",
+                     "numberOfLifts": "1",
+                     "numberOfLivingRooms": "1",
+                     "windowType": "DBL",
+                     "yearConstructed": "1978",
+                     "assetPropertyFolderLink" : "https://drive.google.com/drive/folders/1Vo7xUYx-wRNR1NTjE4pJGV07DnYirflU",
+                     "epcExpiryDate" : "31-12-2030",
+                     "fireSafetyCertificateExpiryDate" : "31-12-2030",
+                     "gasSafetyCertificateExpiryDate" : "31-12-2030",
+                     "elecCertificateExpiryDate" : "31-12-2030",
+                     "optionToTax" : true,
+                     "hasStairs" : true,
+                     "numberOfStairs" : 20,
+                     "hasRampAccess" : true,
+                     "hasCommunalAreas" : true,
+                     "hasPrivateBathroom" : true,
+                     "numberOfBathrooms" : 4,
+                     "bathroomFloor" : 4,
+                     "hasPrivateKitchen" : true,
+                     "numberOfKitchens" : 4,
+                     "kitchenfloor" : 3,
+                     "alertSystemExpiryDate" : "31-12-2030",
+                     "epcScore" : "80 C",
+                     "numberOfFloors" : 8,
+                     "accessibilityComments" : "There's a step to get into the shower",
+                     "numberOfBedSpaces" : 9,
+                     "numberOfCots" : 12,
+                     "sleepingArrangementNotes" : "Ground Floor",
+                     "numberOfShowers" : 4,
+                     "kitchenNotes" : "Shared, on 1st and 3rd floors",
+                     "isStepFree" : true
+              },
+              "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+              "parentAssetIds": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+              "Links":  [
+                     {
+                            "Activities":  "https://activitiesapi.hackney.gov.uk/propertyactivities/[propertyId]"
+                     },
+                     {
+                            "Documents":  "https://documentsapi.hackney.gov.uk?type=property&id=[propertyId]"
+                     },
+                     {
+                            "EPC Certificate" : "https://assetapi.hackney.gov.uk/epc-cert/[00001111]"
+                     },
+                     {
+                            "Tenancies": "https://tenanciesapi.hackney.gov.uk/tenancies[propertyId]"
+                     },
+                     {
+                            "Facilities": "https://assetsapi.hackney.gov.uk/facilities/[00001111]"
+                     }
+              ]
+       }
