@@ -31,8 +31,6 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 
 **Endpoint URL's:**
 - /contracts
-- /contracts/?firstname
-- /contracts/?lastname
 - /contracts/{contractId}
 
 **Request Query String parameters:**
