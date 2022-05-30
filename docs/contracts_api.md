@@ -49,6 +49,7 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 ```
 {
     type: Temp Hostel GF,
+    id: 986a2a9e-9eb4-0966-120a-238689e3e265,
     targetId: 116a2a9e-9eb4-0966-120a-238689e3e265,
     targetType: asset,
     startDate: 26/12/2022,
