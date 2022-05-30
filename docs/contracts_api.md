@@ -24,6 +24,8 @@ This API was discussed at TDA 25/05/22 off the back of the need to move data off
 
 ### Get Contracts:
 
+**Endpoint Status**: PROPOSED
+
 **Purpose:**  
 Gets one or more Contracts from the Contract table.  Requests can be made by specifying a ref path parameter or searching for Tenures based on a series of parameters.
 
@@ -81,6 +83,8 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 ```
 
 ### POST Contracts:
+
+**Endpoint Status**: PROPOSED
 
 **Purpose:**
 Create a new Contract
@@ -164,20 +168,20 @@ Create a new Contract
 
 ### PUT Contracts:
 
+**Endpoint Status**: NOT YET PROPOSED
+
 **Purpose:**
 Updates a new Contract
 
 **Endpoint URL's:**
 - /contracts/{contractId}
 
-Coming soon
-
 ### DELETE Contracts:
+
+**Endpoint Status**: NOT YET PROPOSED
 
 **Purpose:**
 Removes a new Contract
 
 **Endpoint URL's:**
 - /contracts/{contractId}
-
-Coming soon
