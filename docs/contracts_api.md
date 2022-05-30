@@ -46,6 +46,7 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
     targetType: asset,
     startDate: 26/12/2022,
     endDate: 25/12/2023,
+    renewDate: 25/12/2023,
     persons: [
         {
             id: 986a2a9e-9eb4-0966-120a-238689e3e265,
@@ -93,6 +94,7 @@ Create a new Contract
     targetType: asset,
     startDate: 26/12/2022,
     endDate: 25/12/2023,
+    renewDate: 25/12/2023,
     persons: [
         {
             id: 986a2a9e-9eb4-0966-120a-238689e3e265,
@@ -130,6 +132,7 @@ Create a new Contract
     targetType: asset,
     startDate: 26/12/2022,
     endDate: 25/12/2023,
+    renewDate: 25/12/2023,
     persons: [
         {
             id: 986a2a9e-9eb4-0966-120a-238689e3e265,
