@@ -56,13 +56,15 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
             id: 986a2a9e-9eb4-0966-120a-238689e3e265,
             firstname: John,
             lastname: Doe,
-            email: john@doe.com
+            email: john@doe.com,
+            type: Hostel manager
         },
         {
             id: 126a2a9e-9eb4-0966-120a-238689e3e269,
             firstname: Joe,
             lastname: Soap,
-            email: joe@soap.com
+            email: joe@soap.com,
+            type: Caretaker
         }
     ],
     rates: [
@@ -99,13 +101,15 @@ Create a new Contract
             id: 986a2a9e-9eb4-0966-120a-238689e3e265,
             firstname: John,
             lastname: Doe,
-            email: john@doe.com
+            email: john@doe.com,
+            type: Hostel manager
         },
         {
             id: 126a2a9e-9eb4-0966-120a-238689e3e269,
             firstname: Joe,
             lastname: Soap,
-            email: joe@soap.com
+            email: joe@soap.com,
+            type: Caretaker
         }
     ],
     rates: [
@@ -134,13 +138,15 @@ Create a new Contract
             id: 986a2a9e-9eb4-0966-120a-238689e3e265,
             firstname: John,
             lastname: Doe,
-            email: john@doe.com
+            email: john@doe.com,
+            type: Hostel manager
         },
         {
             id: 126a2a9e-9eb4-0966-120a-238689e3e269,
             firstname: Joe,
             lastname: Soap,
-            email: joe@soap.com
+            email: joe@soap.com,
+            type: Caretaker
         }
     ],
     rates: [
