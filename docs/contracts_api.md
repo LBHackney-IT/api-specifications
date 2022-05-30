@@ -33,12 +33,6 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 - /contracts
 - /contracts/{contractId}
 
-**Request Query String parameters:**
-
-- firstname - persons first name
-- lastname - persons last name
-
-
 **Request Path Parameters:**
 - contractId - the specific GUUID id of the contract
 
