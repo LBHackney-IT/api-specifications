@@ -4,7 +4,7 @@ title: Contracts API
 ---
 ## Purpose
 
-The temporary housing relationship between various people requires an agreement in place to enbable the use of the property by Hackney as a temporary accomodation asset. A landlord/hostel manager for example.
+The temporary housing relationship between various people requires an agreement in place to enbable the use of the property by Hackney, as a temporary accomodation asset. A landlord/hostel manager for example.
 
 As part of our solution, we are proposing to develop the Contracts API. This API will be designed to keep the asset and people models clean and provide a link between these objects as well as holding all the contractual information between the parties.
 
