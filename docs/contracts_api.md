@@ -161,3 +161,23 @@ Create a new Contract
     ]
 }
 ```
+
+### PUT Contracts:
+
+**Purpose:**
+Updates a new Contract
+
+**Endpoint URL's:**
+- /contracts/{contractId}
+
+Coming soon
+
+### DELETE Contracts:
+
+**Purpose:**
+Removes a new Contract
+
+**Endpoint URL's:**
+- /contracts/{contractId}
+
+Coming soon
