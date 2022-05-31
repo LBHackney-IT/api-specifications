@@ -46,12 +46,15 @@ GET /api/v1/process/process-name/{id}/
   "process": {
     "id": "dc3eb7a0-73b2-4ad4-a267-622510fa06cb",
     "targetId": "f83540f9-034a-7bfe-9348-7094dd0e0f46",
-    "relatedEntities": {
+    "targetType": "tenure",
+    "relatedEntities": [
+    {
      "id":"6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
      "type": "tenure",
      "subType":"tenant",
      "description": "This is a description"
-    },
+    }
+    ],
     "processName": "Change of Name",
     "currentState": {
       "stateName": "DocumentsAttached",
@@ -130,12 +133,15 @@ GET /api/v1/process/process-name/{id}/
 POST /api/v1/process/{process-name}
 {
   "targetId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-  "relatedEntities": {
+  "targetType": "tenure",
+  "relatedEntities": [
+  {
      "id":"6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
      "type": "tenure",
      "subType":"tenant",
      "description": "This is a description"
-  },
+  }
+  ],
   "formData": {
     "field1": true,
     "field2": "string",
