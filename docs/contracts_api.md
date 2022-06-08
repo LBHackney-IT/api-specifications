@@ -4,7 +4,7 @@ title: Contracts API
 ---
 ## Purpose
 
-The temporary housing relationship between various people requires an agreement in place to enbable the use of the property by Hackney, as a temporary accomodation asset. A landlord/hostel manager for example.
+The temporary housing platform requires an agreement in place with a **Landlord** to enbable the use of the property by Hackney, as a temporary accomodation asset. 
 
 As part of our solution, we are proposing to develop the Contracts API. This API will be designed to keep the asset and people models clean and provide a link between these objects as well as holding all the contractual information between the parties.
 
@@ -18,7 +18,7 @@ As part of our solution, we are proposing to develop the Contracts API. This API
 ## Workshops
 
 This API was discussed at TDA 25/05/22 off the back of the need to move data off the asset data model.
-- https://docs.google.com/document/d/1MYJfzbop_yJhVGlSihhDmAhga6yrbxgCsZWujkYs8AA/edit?userstoinvite=lisa.stidle%40hackney.gov.uk#heading=h.xonwymseh0hm
+- https://docs.google.com/document/d/1MYJfzbop_yJhVGlSihhDmAhga6yrbxgCsZWujkYs8AA/edit?usp=sharing
 
 ## Endpoints to be created
 
@@ -53,14 +53,14 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
             firstname: John,
             lastname: Doe,
             email: john@doe.com,
-            type: Hostel manager
+            type: Landlord
         },
         {
             id: 126a2a9e-9eb4-0966-120a-238689e3e269,
             firstname: Joe,
             lastname: Soap,
             email: joe@soap.com,
-            type: Caretaker
+            type: Landlord
         }
     ],
     rates: [
@@ -101,14 +101,14 @@ Create a new Contract
             firstname: John,
             lastname: Doe,
             email: john@doe.com,
-            type: Hostel manager
+            type: Landlord
         },
         {
             id: 126a2a9e-9eb4-0966-120a-238689e3e269,
             firstname: Joe,
             lastname: Soap,
             email: joe@soap.com,
-            type: Caretaker
+            type: Landlord
         }
     ],
     rates: [
@@ -139,14 +139,14 @@ Create a new Contract
             firstname: John,
             lastname: Doe,
             email: john@doe.com,
-            type: Hostel manager
+            type: Landlord
         },
         {
             id: 126a2a9e-9eb4-0966-120a-238689e3e269,
             firstname: Joe,
             lastname: Soap,
             email: joe@soap.com,
-            type: Caretaker
+            type: Landlord
         }
     ],
     rates: [
