@@ -179,181 +179,181 @@ assets/
 Method: Post
 Post object:
 
-{
-  "assetId": "string",
-  "assetType": "Block",
-  "rootAsset": "string",
-  "parentAssetIds": "string",
-  "assetLocation": {
-    "floorNo": "string",
-    "totalBlockFloors": 0,
-    "parentAssets": [
-      {
-        "type": "string",
-        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "name": "string"
-      }
-    ]
-  },
-  "assetAddress": {
-    "uprn": "string",
-    "addressLine1": "string",
-    "addressLine2": "string",
-    "addressLine3": "string",
-    "addressLine4": "string",
-    "postCode": "string",
-    "postPreamble": "string"
-  },
-  "assetManagement": {
-    "agent": "string",
-    "areaOfficeName": "string",
-    "isCouncilProperty": true,
-    "managingOrganisation": "string",
-    "managingOrganisationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "owner": "string",
-    "isTMOManaged": true,
-    "propertyOccupiedStatus": "string",
-    "isNoRepairsMaintenance": true,
-    "fundingSource": "string",
-    "costCentre": "string",
-    "councilTaxType": "string",
-    "councilTaxLiability": "string",
-    "lhaArea": "string",
-    "isTemporaryAccomodation": true,
-    "readyToLetDate": true
-  },
-  "assetCharacteristics": {
-    "numberOfBedrooms": 0,
-    "numberOfLifts": 0,
-    "numberOfLivingRooms": 0,
-    "windowType": "string",
-    "yearConstructed": "string",
-    "assetPropertyFolderLink": "string",
-    "epcExpiryDate": "2022-05-17T17:42:12.659Z",
-    "fireSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "gasSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "elecCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "optionToTax": true,
-    "hasStairs": true,
-    "numberOfStairs": 0,
-    "hasRampAccess": true,
-    "hasCommunalAreas": true,
-    "hasPrivateBathroom": true,
-    "numberOfBathrooms": 0,
-    "bathroomFloor": "string",
-    "hasPrivateKitchen": true,
-    "numberOfKitchens": 0,
-    "kitchenfloor": "string",
-    "alertSystemExpiryDate": "2022-05-17T17:42:12.659Z",
-    "epcScore": "string",
-    "numberOfFloors": 0,
-    "accessibilityComments": "string",
-    "numberOfBedSpaces": 0,
-    "numberOfCots": 0,
-    "sleepingArrangementNotes": "string",
-    "numberOfShowers": 0,
-    "kitchenNotes": "string",
-    "isStepFree": true
-  },
-  "tenure": {
-    "id": "string",
-    "paymentReference": "string",
-    "type": "string",
-    "startOfTenureDate": "2022-05-17T17:42:12.659Z",
-    "endOfTenureDate": "2022-05-17T17:42:12.659Z",
-    "isActive": true
-  }
-}
+       {
+       "assetId": "string",
+       "assetType": "Block",
+       "rootAsset": "string",
+       "parentAssetIds": "string",
+       "assetLocation": {
+       "floorNo": "string",
+       "totalBlockFloors": 0,
+       "parentAssets": [
+       {
+              "type": "string",
+              "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "name": "string"
+       }
+       ]
+       },
+       "assetAddress": {
+       "uprn": "string",
+       "addressLine1": "string",
+       "addressLine2": "string",
+       "addressLine3": "string",
+       "addressLine4": "string",
+       "postCode": "string",
+       "postPreamble": "string"
+       },
+       "assetManagement": {
+       "agent": "string",
+       "areaOfficeName": "string",
+       "isCouncilProperty": true,
+       "managingOrganisation": "string",
+       "managingOrganisationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+       "owner": "string",
+       "isTMOManaged": true,
+       "propertyOccupiedStatus": "string",
+       "isNoRepairsMaintenance": true,
+       "fundingSource": "string",
+       "costCentre": "string",
+       "councilTaxType": "string",
+       "councilTaxLiability": "string",
+       "lhaArea": "string",
+       "isTemporaryAccomodation": true,
+       "readyToLetDate": true
+       },
+       "assetCharacteristics": {
+       "numberOfBedrooms": 0,
+       "numberOfLifts": 0,
+       "numberOfLivingRooms": 0,
+       "windowType": "string",
+       "yearConstructed": "string",
+       "assetPropertyFolderLink": "string",
+       "epcExpiryDate": "2022-05-17T17:42:12.659Z",
+       "fireSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
+       "gasSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
+       "elecCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
+       "optionToTax": true,
+       "hasStairs": true,
+       "numberOfStairs": 0,
+       "hasRampAccess": true,
+       "hasCommunalAreas": true,
+       "hasPrivateBathroom": true,
+       "numberOfBathrooms": 0,
+       "bathroomFloor": "string",
+       "hasPrivateKitchen": true,
+       "numberOfKitchens": 0,
+       "kitchenfloor": "string",
+       "alertSystemExpiryDate": "2022-05-17T17:42:12.659Z",
+       "epcScore": "string",
+       "numberOfFloors": 0,
+       "accessibilityComments": "string",
+       "numberOfBedSpaces": 0,
+       "numberOfCots": 0,
+       "sleepingArrangementNotes": "string",
+       "numberOfShowers": 0,
+       "kitchenNotes": "string",
+       "isStepFree": true
+       },
+       "tenure": {
+       "id": "string",
+       "paymentReference": "string",
+       "type": "string",
+       "startOfTenureDate": "2022-05-17T17:42:12.659Z",
+       "endOfTenureDate": "2022-05-17T17:42:12.659Z",
+       "isActive": true
+       }
+       }
 
 Response: 201
 Asset created
 
-{
-  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "assetId": "string",
-  "assetType": "Block",
-  "rootAsset": "string",
-  "parentAssetIds": "string",
-  "assetLocation": {
-    "floorNo": "string",
-    "totalBlockFloors": 0,
-    "parentAssets": [
-      {
-        "type": "string",
-        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "name": "string"
-      }
-    ]
-  },
-  "assetAddress": {
-    "uprn": "string",
-    "addressLine1": "string",
-    "addressLine2": "string",
-    "addressLine3": "string",
-    "addressLine4": "string",
-    "postCode": "string",
-    "postPreamble": "string"
-  },
-  "assetManagement": {
-    "agent": "string",
-    "areaOfficeName": "string",
-    "isCouncilProperty": true,
-    "managingOrganisation": "string",
-    "managingOrganisationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "owner": "string",
-    "isTMOManaged": true,
-    "propertyOccupiedStatus": "string",
-    "isNoRepairsMaintenance": true,
-    "fundingSource": "string",
-    "costCentre": "string",
-    "councilTaxType": "string",
-    "councilTaxLiability": "string",
-    "lhaArea": "string",
-    "isTemporaryAccomodation": true,
-    "readyToLetDate": true
-  },
-  "assetCharacteristics": {
-    "numberOfBedrooms": 0,
-    "numberOfLifts": 0,
-    "numberOfLivingRooms": 0,
-    "windowType": "string",
-    "yearConstructed": "string",
-    "assetPropertyFolderLink": "string",
-    "epcExpiryDate": "2022-05-17T17:42:12.659Z",
-    "fireSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "gasSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "elecCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "optionToTax": true,
-    "hasStairs": true,
-    "numberOfStairs": 0,
-    "hasRampAccess": true,
-    "hasCommunalAreas": true,
-    "hasPrivateBathroom": true,
-    "numberOfBathrooms": 0,
-    "bathroomFloor": "string",
-    "hasPrivateKitchen": true,
-    "numberOfKitchens": 0,
-    "kitchenfloor": "string",
-    "alertSystemExpiryDate": "2022-05-17T17:42:12.659Z",
-    "epcScore": "string",
-    "numberOfFloors": 0,
-    "accessibilityComments": "string",
-    "numberOfBedSpaces": 0,
-    "numberOfCots": 0,
-    "sleepingArrangementNotes": "string",
-    "numberOfShowers": 0,
-    "kitchenNotes": "string",
-    "isStepFree": true
-  },
-  "tenure": {
-    "id": "string",
-    "paymentReference": "string",
-    "type": "string",
-    "startOfTenureDate": "2022-05-17T17:42:12.659Z",
-    "endOfTenureDate": "2022-05-17T17:42:12.659Z",
-    "isActive": true
-  }
-}
+       {
+       "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+       "assetId": "string",
+       "assetType": "Block",
+       "rootAsset": "string",
+       "parentAssetIds": "string",
+       "assetLocation": {
+       "floorNo": "string",
+       "totalBlockFloors": 0,
+       "parentAssets": [
+       {
+              "type": "string",
+              "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "name": "string"
+       }
+       ]
+       },
+       "assetAddress": {
+       "uprn": "string",
+       "addressLine1": "string",
+       "addressLine2": "string",
+       "addressLine3": "string",
+       "addressLine4": "string",
+       "postCode": "string",
+       "postPreamble": "string"
+       },
+       "assetManagement": {
+       "agent": "string",
+       "areaOfficeName": "string",
+       "isCouncilProperty": true,
+       "managingOrganisation": "string",
+       "managingOrganisationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+       "owner": "string",
+       "isTMOManaged": true,
+       "propertyOccupiedStatus": "string",
+       "isNoRepairsMaintenance": true,
+       "fundingSource": "string",
+       "costCentre": "string",
+       "councilTaxType": "string",
+       "councilTaxLiability": "string",
+       "lhaArea": "string",
+       "isTemporaryAccomodation": true,
+       "readyToLetDate": true
+       },
+       "assetCharacteristics": {
+       "numberOfBedrooms": 0,
+       "numberOfLifts": 0,
+       "numberOfLivingRooms": 0,
+       "windowType": "string",
+       "yearConstructed": "string",
+       "assetPropertyFolderLink": "string",
+       "epcExpiryDate": "2022-05-17T17:42:12.659Z",
+       "fireSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
+       "gasSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
+       "elecCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
+       "optionToTax": true,
+       "hasStairs": true,
+       "numberOfStairs": 0,
+       "hasRampAccess": true,
+       "hasCommunalAreas": true,
+       "hasPrivateBathroom": true,
+       "numberOfBathrooms": 0,
+       "bathroomFloor": "string",
+       "hasPrivateKitchen": true,
+       "numberOfKitchens": 0,
+       "kitchenfloor": "string",
+       "alertSystemExpiryDate": "2022-05-17T17:42:12.659Z",
+       "epcScore": "string",
+       "numberOfFloors": 0,
+       "accessibilityComments": "string",
+       "numberOfBedSpaces": 0,
+       "numberOfCots": 0,
+       "sleepingArrangementNotes": "string",
+       "numberOfShowers": 0,
+       "kitchenNotes": "string",
+       "isStepFree": true
+       },
+       "tenure": {
+       "id": "string",
+       "paymentReference": "string",
+       "type": "string",
+       "startOfTenureDate": "2022-05-17T17:42:12.659Z",
+       "endOfTenureDate": "2022-05-17T17:42:12.659Z",
+       "isActive": true
+       }
+       }
 
 
 400
