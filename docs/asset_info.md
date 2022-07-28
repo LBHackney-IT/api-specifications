@@ -392,6 +392,69 @@ Not found
 
        Internal Server Error
 
+
+4. PATCH properties `/assets/{id}`
+
+       ** Purpose: ** Updates an existing asset in dynamoDB database.
+    
+    **Request Payload:**
+    ```json
+    {
+        "assetType": "Garage | Dwelling | Estate ...",
+        "assetManagement": {
+              "agent": "HAH",
+              "areaOfficeName": "Clapton Panel Area Team",
+              "isCouncilProperty": false,
+              "managingOrganisation": "LBH, -- Hackney or TMO",
+              "managingOrganisationId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+              "owner": "London Borough of Hackney",
+              "isTMOManaged": true,
+              "propertyOccupiedStatus" : "Vacant",
+              "isNoRepairsMaintenance" : true,
+              "fundingSource" : "TA",
+              "costCentre" : "D0720",
+              "councilTaxType" : "House in multiple occupancy (HMO)",
+              "councilTaxLiability" : "Void only",
+              "lhaArea" : "Inner East London",
+              "isTemporaryAccomodation" : true,
+              "readyToLetDate" : true
+       },
+       "assetCharacteristics": {
+              "numberOfBedrooms": "2",
+              "numberOfLifts": "1",
+              "numberOfLivingRooms": "1",
+              "windowType": "DBL",
+              "yearConstructed": "1978",
+              "assetPropertyFolderLink" : "https://drive.google.com/drive/folders/1Vo7xUYx-wRNR1NTjE4pJGV07DnYirflU",
+              "epcExpiryDate" : "31-12-2030",
+              "fireSafetyCertificateExpiryDate" : "31-12-2030",
+              "gasSafetyCertificateExpiryDate" : "31-12-2030",
+              "elecCertificateExpiryDate" : "31-12-2030",
+              "optionToTax" : true,
+              "hasStairs" : true,
+              "numberOfStairs" : 20,
+              "hasRampAccess" : true,
+              "hasCommunalAreas" : true,
+              "hasPrivateBathroom" : true,
+              "numberOfBathrooms" : 4,
+              "bathroomFloor" : 4,
+              "hasPrivateKitchen" : true,
+              "numberOfKitchens" : 4,
+              "kitchenfloor" : 3,
+              "alertSystemExpiryDate" : "31-12-2030",
+              "epcScore" : "80 C",
+              "numberOfFloors" : 8,
+              "accessibilityComments" : "There's a step to get into the shower",
+              "numberOfBedSpaces" : 9,
+              "numberOfCots" : 12,
+              "sleepingArrangementNotes" : "Ground Floor",
+              "numberOfShowers" : 4,
+              "kitchenNotes" : "Shared, on 1st and 3rd floors",
+              "isStepFree" : true
+       },
+       "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+    }
+    ```
 ## Example payload
 ```json
 {
