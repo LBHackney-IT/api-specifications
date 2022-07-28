@@ -403,7 +403,8 @@ Not found
        ** Purpose: ** Updates an existing asset in dynamoDB database.
        We are using patch to allow for in place editing (single field updates).
     
-    **Request Payload:**
+**Request Payload:**
+
     ```json
     {
         "assetType": "Garage | Dwelling | Estate ...",
@@ -461,7 +462,11 @@ Not found
        "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
     }
     ```
-## Example payload
+ **Response:**
+
+ Code 200 OK returning the [full payload](#example-full-payload).
+
+## Example full payload
 ```json
 {
        "Id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
