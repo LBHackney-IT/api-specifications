@@ -72,6 +72,11 @@ We have agreed on a flexible approach to following HACT standards for Asset info
 - If uprn matches we would throw a validation error "Asset with this uprn already exists".
 - If uprn is new we would create new asset.
 
+** As a housing officer I want to update an existing asset so that: **
+- The asset information is always up to date.
+- I can correct asset information.
+- I can change assets status.
+
 ** As a developer I need to create an API specification so that: **
 - I can provide clear documentation about endpoints and payloads, etc.
 - I can help the external agency developer on quick onboarding.
