@@ -405,7 +405,7 @@ Not found
     
 **Request Payload:**
 
-    ```json
+```json
     {
         "assetType": "Garage | Dwelling | Estate ...",
         "assetManagement": {
@@ -461,7 +461,8 @@ Not found
        },
        "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
     }
-    ```
+```
+ 
  **Response:**
 
  Code 200 OK returning the [full payload](#example-full-payload).
