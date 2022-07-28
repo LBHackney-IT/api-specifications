@@ -178,96 +178,96 @@ assets/
 
 Method: Post
 Post object:
-
+```json
 {
-  "assetId": "string",
-  "assetType": "Block",
-  "rootAsset": "string",
-  "parentAssetIds": "string",
-  "assetLocation": {
-    "floorNo": "string",
-    "totalBlockFloors": 0,
-    "parentAssets": [
-      {
-        "type": "string",
-        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "name": "string"
-      }
-    ]
-  },
-  "assetAddress": {
-    "uprn": "string",
-    "addressLine1": "string",
-    "addressLine2": "string",
-    "addressLine3": "string",
-    "addressLine4": "string",
-    "postCode": "string",
-    "postPreamble": "string"
-  },
-  "assetManagement": {
-    "agent": "string",
-    "areaOfficeName": "string",
-    "isCouncilProperty": true,
-    "managingOrganisation": "string",
-    "managingOrganisationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "owner": "string",
-    "isTMOManaged": true,
-    "propertyOccupiedStatus": "string",
-    "isNoRepairsMaintenance": true,
-    "fundingSource": "string",
-    "costCentre": "string",
-    "councilTaxType": "string",
-    "councilTaxLiability": "string",
-    "lhaArea": "string",
-    "isTemporaryAccomodation": true,
-    "readyToLetDate": true
-  },
-  "assetCharacteristics": {
-    "numberOfBedrooms": 0,
-    "numberOfLifts": 0,
-    "numberOfLivingRooms": 0,
-    "windowType": "string",
-    "yearConstructed": "string",
-    "assetPropertyFolderLink": "string",
-    "epcExpiryDate": "2022-05-17T17:42:12.659Z",
-    "fireSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "gasSafetyCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "elecCertificateExpiryDate": "2022-05-17T17:42:12.659Z",
-    "optionToTax": true,
-    "hasStairs": true,
-    "numberOfStairs": 0,
-    "hasRampAccess": true,
-    "hasCommunalAreas": true,
-    "hasPrivateBathroom": true,
-    "numberOfBathrooms": 0,
-    "bathroomFloor": "string",
-    "hasPrivateKitchen": true,
-    "numberOfKitchens": 0,
-    "kitchenfloor": "string",
-    "alertSystemExpiryDate": "2022-05-17T17:42:12.659Z",
-    "epcScore": "string",
-    "numberOfFloors": 0,
-    "accessibilityComments": "string",
-    "numberOfBedSpaces": 0,
-    "numberOfCots": 0,
-    "sleepingArrangementNotes": "string",
-    "numberOfShowers": 0,
-    "kitchenNotes": "string",
-    "isStepFree": true
-  },
-  "tenure": {
-    "id": "string",
-    "paymentReference": "string",
-    "type": "string",
-    "startOfTenureDate": "2022-05-17T17:42:12.659Z",
-    "endOfTenureDate": "2022-05-17T17:42:12.659Z",
-    "isActive": true
-  }
+    "assetId":"string",
+    "assetType":"Block",
+    "rootAsset":"string",
+    "parentAssetIds":"string",
+    "assetLocation":{
+        "floorNo":"string",
+        "totalBlockFloors":0,
+        "parentAssets":[
+            {
+                "type":"string",
+                "id":"3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "name":"string"
+            }
+        ]
+    },
+    "assetAddress":{
+        "uprn":"string",
+        "addressLine1":"string",
+        "addressLine2":"string",
+        "addressLine3":"string",
+        "addressLine4":"string",
+        "postCode":"string",
+        "postPreamble":"string"
+    },
+    "assetManagement":{
+        "agent":"string",
+        "areaOfficeName":"string",
+        "isCouncilProperty":true,
+        "managingOrganisation":"string",
+        "managingOrganisationId":"3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "owner":"string",
+        "isTMOManaged":true,
+        "propertyOccupiedStatus":"string",
+        "isNoRepairsMaintenance":true,
+        "fundingSource":"string",
+        "costCentre":"string",
+        "councilTaxType":"string",
+        "councilTaxLiability":"string",
+        "lhaArea":"string",
+        "isTemporaryAccomodation":true,
+        "readyToLetDate":true
+    },
+    "assetCharacteristics":{
+        "numberOfBedrooms":0,
+        "numberOfLifts":0,
+        "numberOfLivingRooms":0,
+        "windowType":"string",
+        "yearConstructed":"string",
+        "assetPropertyFolderLink":"string",
+        "epcExpiryDate":"2022-05-17T17:42:12.659Z",
+        "fireSafetyCertificateExpiryDate":"2022-05-17T17:42:12.659Z",
+        "gasSafetyCertificateExpiryDate":"2022-05-17T17:42:12.659Z",
+        "elecCertificateExpiryDate":"2022-05-17T17:42:12.659Z",
+        "optionToTax":true,
+        "hasStairs":true,
+        "numberOfStairs":0,
+        "hasRampAccess":true,
+        "hasCommunalAreas":true,
+        "hasPrivateBathroom":true,
+        "numberOfBathrooms":0,
+        "bathroomFloor":"string",
+        "hasPrivateKitchen":true,
+        "numberOfKitchens":0,
+        "kitchenfloor":"string",
+        "alertSystemExpiryDate":"2022-05-17T17:42:12.659Z",
+        "epcScore":"string",
+        "numberOfFloors":0,
+        "accessibilityComments":"string",
+        "numberOfBedSpaces":0,
+        "numberOfCots":0,
+        "sleepingArrangementNotes":"string",
+        "numberOfShowers":0,
+        "kitchenNotes":"string",
+        "isStepFree":true
+    },
+    "tenure":{
+        "id":"string",
+        "paymentReference":"string",
+        "type":"string",
+        "startOfTenureDate":"2022-05-17T17:42:12.659Z",
+        "endOfTenureDate":"2022-05-17T17:42:12.659Z",
+        "isActive":true
+    }
 }
-
+```
 Response: 201
 Asset created
-
+```json
 {
   "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "assetId": "string",
@@ -354,7 +354,7 @@ Asset created
     "isActive": true
   }
 }
-
+```
 
 400
 Bad request
@@ -393,109 +393,110 @@ Not found
        Internal Server Error
 
 ## Example payload
-
-       {
-              "Id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-              "assetId": "00007918",
-              "assetType": "Garage | Dwelling | Estate ...",
-              "assetLocation": {
-                     "parentAssets": [
-                     {
-                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-                            "type": "sub-block",
-                            "name": "Newcombe House (1-18)"
-                     },
-                     {
-                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-                            "type": "block",
-                            "name": "Newcombe House (1-35)"
-                     },
-                     {
-                            "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-                            "type": "estate",
-                            "name": "Newcombe House Estate Powell Road"
-                     }
-                     ],
-                     "floor": "G",
-                     "totalBlockFloors": "5"
+```json
+{
+       "Id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+       "assetId": "00007918",
+       "assetType": "Garage | Dwelling | Estate ...",
+       "assetLocation": {
+              "parentAssets": [
+              {
+                     "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                     "type": "sub-block",
+                     "name": "Newcombe House (1-18)"
               },
-              "assetAddress": {
-                     "uprn": "100021065786",
-                     "addressLine1": "Powell Road",
-                     "addressLine2": "Hackney",
-                     "addressLine3": "London",
-                     "addressLine4": "",
-                     "postCode": "E5 8DH",
-                     "postPreamble": "1 Newcome House"
+              {
+                     "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                     "type": "block",
+                     "name": "Newcombe House (1-35)"
               },
-              "assetManagement": {
-                     "agent": "HAH",
-                     "areaOfficeName": "Clapton Panel Area Team",
-                     "isCouncilProperty": false,
-                     "managingOrganisation": "LBH, -- Hackney or TMO",
-                     "managingOrganisationId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-                     "owner": "London Borough of Hackney",
-                     "isTMOManaged": true,
-                     "propertyOccupiedStatus" : "Vacant",
-                     "isNoRepairsMaintenance" : true,
-                     "fundingSource" : "TA",
-                     "costCentre" : "D0720",
-                     "councilTaxType" : "House in multiple occupancy (HMO)",
-                     "councilTaxLiability" : "Void only",
-                     "lhaArea" : "Inner East London",
-                     "isTemporaryAccomodation" : true,
-                     "readyToLetDate" : true
+              {
+                     "id": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+                     "type": "estate",
+                     "name": "Newcombe House Estate Powell Road"
+              }
+              ],
+              "floor": "G",
+              "totalBlockFloors": "5"
+       },
+       "assetAddress": {
+              "uprn": "100021065786",
+              "addressLine1": "Powell Road",
+              "addressLine2": "Hackney",
+              "addressLine3": "London",
+              "addressLine4": "",
+              "postCode": "E5 8DH",
+              "postPreamble": "1 Newcome House"
+       },
+       "assetManagement": {
+              "agent": "HAH",
+              "areaOfficeName": "Clapton Panel Area Team",
+              "isCouncilProperty": false,
+              "managingOrganisation": "LBH, -- Hackney or TMO",
+              "managingOrganisationId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+              "owner": "London Borough of Hackney",
+              "isTMOManaged": true,
+              "propertyOccupiedStatus" : "Vacant",
+              "isNoRepairsMaintenance" : true,
+              "fundingSource" : "TA",
+              "costCentre" : "D0720",
+              "councilTaxType" : "House in multiple occupancy (HMO)",
+              "councilTaxLiability" : "Void only",
+              "lhaArea" : "Inner East London",
+              "isTemporaryAccomodation" : true,
+              "readyToLetDate" : true
+       },
+       "assetCharacteristics": {
+              "numberOfBedrooms": "2",
+              "numberOfLifts": "1",
+              "numberOfLivingRooms": "1",
+              "windowType": "DBL",
+              "yearConstructed": "1978",
+              "assetPropertyFolderLink" : "https://drive.google.com/drive/folders/1Vo7xUYx-wRNR1NTjE4pJGV07DnYirflU",
+              "epcExpiryDate" : "31-12-2030",
+              "fireSafetyCertificateExpiryDate" : "31-12-2030",
+              "gasSafetyCertificateExpiryDate" : "31-12-2030",
+              "elecCertificateExpiryDate" : "31-12-2030",
+              "optionToTax" : true,
+              "hasStairs" : true,
+              "numberOfStairs" : 20,
+              "hasRampAccess" : true,
+              "hasCommunalAreas" : true,
+              "hasPrivateBathroom" : true,
+              "numberOfBathrooms" : 4,
+              "bathroomFloor" : 4,
+              "hasPrivateKitchen" : true,
+              "numberOfKitchens" : 4,
+              "kitchenfloor" : 3,
+              "alertSystemExpiryDate" : "31-12-2030",
+              "epcScore" : "80 C",
+              "numberOfFloors" : 8,
+              "accessibilityComments" : "There's a step to get into the shower",
+              "numberOfBedSpaces" : 9,
+              "numberOfCots" : 12,
+              "sleepingArrangementNotes" : "Ground Floor",
+              "numberOfShowers" : 4,
+              "kitchenNotes" : "Shared, on 1st and 3rd floors",
+              "isStepFree" : true
+       },
+       "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+       "parentAssetIds": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+       "Links":  [
+              {
+                     "Activities":  "https://activitiesapi.hackney.gov.uk/propertyactivities/[propertyId]"
               },
-              "assetCharacteristics": {
-                     "numberOfBedrooms": "2",
-                     "numberOfLifts": "1",
-                     "numberOfLivingRooms": "1",
-                     "windowType": "DBL",
-                     "yearConstructed": "1978",
-                     "assetPropertyFolderLink" : "https://drive.google.com/drive/folders/1Vo7xUYx-wRNR1NTjE4pJGV07DnYirflU",
-                     "epcExpiryDate" : "31-12-2030",
-                     "fireSafetyCertificateExpiryDate" : "31-12-2030",
-                     "gasSafetyCertificateExpiryDate" : "31-12-2030",
-                     "elecCertificateExpiryDate" : "31-12-2030",
-                     "optionToTax" : true,
-                     "hasStairs" : true,
-                     "numberOfStairs" : 20,
-                     "hasRampAccess" : true,
-                     "hasCommunalAreas" : true,
-                     "hasPrivateBathroom" : true,
-                     "numberOfBathrooms" : 4,
-                     "bathroomFloor" : 4,
-                     "hasPrivateKitchen" : true,
-                     "numberOfKitchens" : 4,
-                     "kitchenfloor" : 3,
-                     "alertSystemExpiryDate" : "31-12-2030",
-                     "epcScore" : "80 C",
-                     "numberOfFloors" : 8,
-                     "accessibilityComments" : "There's a step to get into the shower",
-                     "numberOfBedSpaces" : 9,
-                     "numberOfCots" : 12,
-                     "sleepingArrangementNotes" : "Ground Floor",
-                     "numberOfShowers" : 4,
-                     "kitchenNotes" : "Shared, on 1st and 3rd floors",
-                     "isStepFree" : true
+              {
+                     "Documents":  "https://documentsapi.hackney.gov.uk?type=property&id=[propertyId]"
               },
-              "rootAsset": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-              "parentAssetIds": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6#6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
-              "Links":  [
-                     {
-                            "Activities":  "https://activitiesapi.hackney.gov.uk/propertyactivities/[propertyId]"
-                     },
-                     {
-                            "Documents":  "https://documentsapi.hackney.gov.uk?type=property&id=[propertyId]"
-                     },
-                     {
-                            "EPC Certificate" : "https://assetapi.hackney.gov.uk/epc-cert/[00001111]"
-                     },
-                     {
-                            "Tenancies": "https://tenanciesapi.hackney.gov.uk/tenancies[propertyId]"
-                     },
-                     {
-                            "Facilities": "https://assetsapi.hackney.gov.uk/facilities/[00001111]"
-                     }
-              ]
-       }
+              {
+                     "EPC Certificate" : "https://assetapi.hackney.gov.uk/epc-cert/[00001111]"
+              },
+              {
+                     "Tenancies": "https://tenanciesapi.hackney.gov.uk/tenancies[propertyId]"
+              },
+              {
+                     "Facilities": "https://assetsapi.hackney.gov.uk/facilities/[00001111]"
+              }
+       ]
+}
+```
