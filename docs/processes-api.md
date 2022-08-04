@@ -157,6 +157,8 @@ POST /api/v1/process/{process-name}
 }
 ```
 
+** Swagger Hub Hackney: ** https://app.swaggerhub.com/apis/Hackney/ProcessesApi/2.0.0
+
 ```json
 POST /api/v2/process/{process-name}
 {
