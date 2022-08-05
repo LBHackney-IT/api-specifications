@@ -157,6 +157,42 @@ POST /api/v1/process/{process-name}
 }
 ```
 
+** Swagger Hub Hackney: ** https://app.swaggerhub.com/apis/Hackney/ProcessesApi/2.0.0
+
+```json
+POST /api/v2/process/{process-name}
+{
+  "targetId": "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+  "targetType": "tenure",
+  "relatedEntities": [
+  {
+     "id":"6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+     "type": "tenure",
+     "subType":"tenant",
+     "description": "This is a description"
+  }
+  ],
+  "formData": {
+    "field1": true,
+    "field2": "string",
+    "field3": 1,
+    "field4": "string",
+    "field5": false
+  },
+  "documents": [
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e6",
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e7",
+    "6f22e9ae-3e8a-4e0e-af46-db02eb87f8e8"
+  ],
+  "patchAssignment": {
+    "patchId": "fb0007b8-ee9e-4845-9fc2-d2b662ff4f84",
+    "patchName": "CP7",
+    "responsibleEntityId": "00578577-91c6-4244-a72c-c757fefe8d87",
+    "responsibileName": "Stephen Lewis"
+  }
+}
+```
+
 ###### PATCH Endpoint:
 
 ```json
