@@ -402,7 +402,11 @@ Not found
 
        ** Purpose: ** Updates an existing asset in dynamoDB database.
        We are using patch to allow for in place editing (single field updates).
-    
+
+**Request Headers**
+
+- If-Match
+
 **Request Payload:**
 
 ```json
