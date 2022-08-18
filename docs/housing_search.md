@@ -33,7 +33,8 @@ Searching is achieved by providing `searchText` as a string parameter.
 1. Person - First name, Middle name, Last name
 2. Asset - Address line 1, Postcode, Asset type
 3. Tenure - Payment Reference, FullAddress of TenuredAsset , Household Members FullName  
-4. Transactions - Sender name, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount  
+4. Transactions - Sender name, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount
+5. Staff - first Name, last name, email
 
 ### Filtering
 
@@ -82,7 +83,8 @@ Allows to search on fields which do not exist only on platform APIs. It allows t
 6. High Scalable
 
 ** Dependencies : **
-- By person
+
+** By person **
 - Person Information
 - Tenure
 - Asset Information
@@ -98,6 +100,11 @@ Allows to search on fields which do not exist only on platform APIs. It allows t
 - Tenure
 - Person Information
 - Alert
+
+** By Staff **
+- Person Information
+- Contact Details
+- Patches & Areas
 
 ### Workshop 26/04/2022
 
