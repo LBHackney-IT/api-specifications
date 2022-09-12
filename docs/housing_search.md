@@ -17,11 +17,11 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 
 ## User Needs
 
-** As a service: **
+**As a service:**
 - I want the ability to view the details of the results returned in a search
 - So that I can easily look through the different results and make the correct selection and proceed to the profile that I was looking for
 
-** As a TA officer: **
+**As a TA officer:**
 - I want the ability to filter the details of the results returned in an asset search
 - So that I can easily look through the different results and find accommodation matching my requirements
 
@@ -82,29 +82,35 @@ Allows to search on fields which do not exist only on platform APIs. It allows t
 5. Schema free
 6. High Scalable
 
-** Dependencies : **
+**Dependencies :**
 
-** By person **
+**By person**
 - Person Information
 - Tenure
 - Asset Information
 - Transactions
 - Alerts
 
-** By Asset **
+**By Asset**
 - Asset Information
 - Tenure
 - Alert
 
-** By Tenure **
+**By Tenure**
 - Tenure
 - Person Information
 - Alert
 
-** By Staff **
+**By Staff**
 - Person Information
 - Contact Details
 - Patches & Areas
+
+**By Processes**
+- Processes Information
+- Tenure
+- Asset
+- Person
 
 ### Workshop 26/04/2022
 
