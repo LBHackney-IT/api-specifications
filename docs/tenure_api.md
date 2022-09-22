@@ -232,34 +232,23 @@ Endpoints URL: tenures/{tenureid}
     	"successionDate": "string",
     	"evictionDate": "string",
     	"potentialEndDate": "string",
-    	"notices": [{
-    		"type": "Notice to quit",
-    		"servedDate": "2021-03-29",
-    		"expiryDate": "string",
-    		"endDate": "string",
-    		"effectiveDate": "string"
-    	}],
-    	"legacyReferences": [{
-    		"name": "u_saff_tenancy",
-    		"value": "123456"
-    	}],
-      "isMutualExchange": false,
-      "informHousingBenefitsForChanges": false,
-      "isSublet": false,
-      "subletEndDate": "string",
-      "jigsawRef": "string",
-      "fundingSource": "string",
-      "noOfAdults": 0,
-      "noOfChildren": 0,
-      "hasStorage": false,
-      "rentAccountRequired": false,
-      "noRentAccountReason": "string",
-      "ActualStartOfTenure": "string",
-      "RentLetterDate": "string",
-      "RentCardDate": "string",
-      "MoveOnDate": "string", 
-      "MoveOnAddress": "string", 
-      "reasonForTermination": "string"  
+     "isMutualExchange": false,
+     "informHousingBenefitsForChanges": false,
+     "isSublet": false,
+     "subletEndDate": "string",
+     "jigsawRef": "string",
+     "fundingSource": "string",
+     "noOfAdults": 0,
+     "noOfChildren": 0,
+     "hasStorage": false,
+     "rentAccountRequired": false,
+     "noRentAccountReason": "string",
+     "ActualStartOfTenure": "string",
+     "RentLetterDate": "string",
+     "RentCardDate": "string",
+     "MoveOnDate": "string", 
+     "MoveOnAddress": "string", 
+     "reasonForTermination": "string"  
     }
 
 **Request Headers**
