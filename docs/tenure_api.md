@@ -221,13 +221,85 @@ Endpoints URL: tenures/{tenureid}
 **Request object:**
 
     {
+      "householdMembers": [
+        {
+          "id": "TWVoZGlLaW1ha2hlCg==",
+          "type": "person",
+          "fullName": "string",
+          "isResponsible": true,
+          "dateOfBirth": "string",
+          "personTenureType": "Tenant"
+        }
+      ],
+      "tenuredAsset": {
+        "id": "string",
+        "type": "Block",
+        "fullAddress": "string",
+        "uprn": "string"
+      },
+      "charges": {
+        "rent": 0,
+        "currentBalance": 0,
+        "billingFrequency": "string",
+        "serviceCharge": 0,
+        "otherCharges": 0,
+        "combinedServiceCharges": 0,
+        "combinedRentCharges": 0,
+        "tenancyInsuranceCharge": 0,
+        "originalRentCharge": 0,
+        "originalServiceCharge": 0
+      },
       "startOfTenureDate": "string",
       "endOfTenureDate": "string",
       "tenureType": {
         "code": "INT",
         "description": "Introductory"
-      }
+      },
+      "isTenanted": true,
+      "terminated": {
+        "isTerminated": false,
+        "reasonForTermination": "string"
+      },
+      "successionDate": "string",
+      "evictionDate": "string",
+      "potentialEndDate": "string",
+      "notices": [
+        {
+          "type": "Notice to quit",
+          "servedDate": "2021-03-29",
+          "expiryDate": "string",
+          "endDate": "string",
+          "effectiveDate": "string"
+        }
+      ],
+      "legacyReferences": [
+        {
+          "name": "u_saff_tenancy",
+          "value": "123456"
+        }
+      ],
+      "isMutualExchange": false,
+      "informHousingBenefitsForChanges": false,
+      "isSublet": false,
+      "subletEndDate": "string",
+      "jigsawRef": "string",
+      "jigsawAddressUpdatedBy": "string",
+      "fundingSource": "string",
+      "noOfAdults": 0,
+      "noOfChildren": 0,
+      "hasStorage": false,
+      "rentAccountRequired": false,
+      "noRentAccountReason": "string",
+      "bookedInBy": "string"
+      "ActualStartOfTenure": "string",
+      "RentLetterDate": "string",
+      "RentLetterSentBy": "string",
+      "RentCardDate": "string",
+      "RentCardGivenBy": "string",
+      "MoveOnDate": "string", 
+      "MoveOnAddress": "string",           
     }
+
 **Request Headers**
 - ifMatch
 
