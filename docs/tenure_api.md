@@ -195,7 +195,23 @@ Purpose: Create one or more tenures
       "isMutualExchange": false,
       "informHousingBenefitsForChanges": false,
       "isSublet": false,
-      "subletEndDate": "string"
+      "subletEndDate": "string",
+      "jigsawRef": "string",
+      "jigsawAddressUpdatedBy": "string",
+      "fundingSource": "string",
+      "noOfAdults": 0,
+      "noOfChildren": 0,
+      "hasStorage": false,
+      "rentAccountRequired": false,
+      "noRentAccountReason": "string",
+      "bookedInBy": "string"
+      "ActualStartOfTenure": "string",
+      "RentLetterDate": "string",
+      "RentLetterSentBy": "string",
+      "RentCardDate": "string",
+      "RentCardGivenBy": "string",
+      "MoveOnDate": "string", 
+      "MoveOnAddress": "string",           
     }
 **PATCH Tenures:**
 
