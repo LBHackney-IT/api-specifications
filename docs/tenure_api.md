@@ -197,21 +197,18 @@ Purpose: Create one or more tenures
       "isSublet": false,
       "subletEndDate": "string",
       "jigsawRef": "string",
-      "jigsawAddressUpdatedBy": "string",
       "fundingSource": "string",
       "noOfAdults": 0,
       "noOfChildren": 0,
       "hasStorage": false,
       "rentAccountRequired": false,
       "noRentAccountReason": "string",
-      "bookedInBy": "string"
       "ActualStartOfTenure": "string",
       "RentLetterDate": "string",
-      "RentLetterSentBy": "string",
       "RentCardDate": "string",
-      "RentCardGivenBy": "string",
       "MoveOnDate": "string", 
-      "MoveOnAddress": "string",           
+      "MoveOnAddress": "string", 
+      "reasonForTermination": "string"     
     }
 **PATCH Tenures:**
 
@@ -246,26 +243,23 @@ Endpoints URL: tenures/{tenureid}
     		"name": "u_saff_tenancy",
     		"value": "123456"
     	}],
-    	"isMutualExchange": false,
-    	"informHousingBenefitsForChanges": false,
-    	"isSublet": false,
-    	"subletEndDate": "string",
-    	"jigsawRef": "string",
-    	"jigsawAddressUpdatedBy": "string",
-    	"fundingSource": "string",
-    	"noOfAdults": 0,
-    	"noOfChildren": 0,
-    	"hasStorage": false,
-    	"rentAccountRequired": false,
-    	"noRentAccountReason": "string",
-    	"bookedInBy": "string",
-    	"ActualStartOfTenure": "string",
-    	"RentLetterDate": "string",
-    	"RentLetterSentBy": "string",
-    	"RentCardDate": "string",
-    	"RentCardGivenBy": "string",
-    	"MoveOnDate": "string",
-    	"MoveOnAddress": "string"
+      "isMutualExchange": false,
+      "informHousingBenefitsForChanges": false,
+      "isSublet": false,
+      "subletEndDate": "string",
+      "jigsawRef": "string",
+      "fundingSource": "string",
+      "noOfAdults": 0,
+      "noOfChildren": 0,
+      "hasStorage": false,
+      "rentAccountRequired": false,
+      "noRentAccountReason": "string",
+      "ActualStartOfTenure": "string",
+      "RentLetterDate": "string",
+      "RentCardDate": "string",
+      "MoveOnDate": "string", 
+      "MoveOnAddress": "string", 
+      "reasonForTermination": "string"  
     }
 
 **Request Headers**
