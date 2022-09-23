@@ -130,6 +130,7 @@ If item was not found
 
 Purpose: Create one or more tenures
 - Endpoint URL: tenures/{tenureid}
+** Purpose: ** Note that JigsawRef will be stored within the LegacyReferences parameter
 
 **Request object:**
 
@@ -232,6 +233,12 @@ Endpoints URL: tenures/{tenureid}
       "successionDate": "string",
       "evictionDate": "string",
       "potentialEndDate": "string",
+      "legacyReferences": [
+        {
+          "name": "u_saff_tenancy",
+          "value": "123456"
+        }
+      ],      
       "isMutualExchange": false,
       "informHousingBenefitsForChanges": false,
       "isSublet": false,
@@ -243,10 +250,8 @@ Endpoints URL: tenures/{tenureid}
       "hasStorage": false,
       "rentAccountRequired": false,
       "noRentAccountReason": "string",
-      "actualStartOfTenure": "string",
       "rentLetterDate": "string",
       "rentCardDate": "string",
-      "moveOnDate": "string", 
       "moveOnAddress": "string", 
       "reasonForTermination": "string"  
     }
