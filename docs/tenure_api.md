@@ -197,19 +197,16 @@ Purpose: Create one or more tenures
       "informHousingBenefitsForChanges": false,
       "isSublet": false,
       "subletEndDate": "string",
-      "jigsawRef": "string",
       "fundingSource": "string",
-      "noOfAdults": 0,
-      "noOfChildren": 0,
-      "hasStorage": false,
-      "rentAccountRequired": false,
-      "noRentAccountReason": "string",
-      "actualStartOfTenure": "string",
-      "rentLetterDate": "string",
-      "rentCardDate": "string",
-      "moveOnDate": "string", 
-      "moveOnAddress": "string", 
-      "reasonForTermination": "string"     
+      "numberOfAdultsInProperty": 0,
+      "numberOfChildrenInProperty": 0,
+      "hasOffsiteStorage": false,
+      "furtherAccountInformation":{
+        "rentAccountRequired": false,
+        "noRentAccountReason": "string",
+        "rentLetterDate": "string",
+        "rentCardDate": "string"
+        } 
     }
 **PATCH Tenures:**
 
@@ -245,15 +242,15 @@ Endpoints URL: tenures/{tenureid}
       "subletEndDate": "string",
       "jigsawRef": "string",
       "fundingSource": "string",
-      "noOfAdults": 0,
-      "noOfChildren": 0,
-      "hasStorage": false,
-      "rentAccountRequired": false,
-      "noRentAccountReason": "string",
-      "rentLetterDate": "string",
-      "rentCardDate": "string",
-      "moveOnAddress": "string", 
-      "reasonForTermination": "string"  
+      "numberOfAdultsInProperty": 0,
+      "numberOfChildrenInProperty": 0,
+      "hasOffsiteStorage": false,
+      "furtherAccountInformation":{
+        "rentAccountRequired": false,
+        "noRentAccountReason": "string",
+        "rentLetterDate": "string",
+        "rentCardDate": "string"
+        } 
     }
 
 **Request Headers**
