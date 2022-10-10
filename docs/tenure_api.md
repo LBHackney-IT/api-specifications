@@ -170,6 +170,7 @@ Purpose: Create one or more tenures
         "code": "INT",
         "description": "Introductory"
       },
+      "tenureSource": "string",
       "isTenanted": true,
       "terminated": {
         "isTerminated": false,
@@ -218,29 +219,22 @@ Endpoints URL: tenures/{tenureid}
     {
     	"startOfTenureDate": "string",
     	"endOfTenureDate": "string",
+      "paymentReference": "string",
     	"tenureType": {
     		"code": "INT",
     		"description": "Introductory"
     	},
-    	"isTenanted": true,
+      "tenureSource": "string",
     	"terminated": {
     		"isTerminated": false,
     		"reasonForTermination": "string"
     	},
-      "successionDate": "string",
-      "evictionDate": "string",
-      "potentialEndDate": "string",
       "legacyReferences": [
         {
           "name": "u_saff_tenancy",
           "value": "123456"
         }
       ],      
-      "isMutualExchange": false,
-      "informHousingBenefitsForChanges": false,
-      "isSublet": false,
-      "subletEndDate": "string",
-      "jigsawRef": "string",
       "fundingSource": "string",
       "numberOfAdultsInProperty": 0,
       "numberOfChildrenInProperty": 0,
