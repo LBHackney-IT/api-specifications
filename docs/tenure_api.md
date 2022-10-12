@@ -130,6 +130,7 @@ If item was not found
 
 Purpose: Create one or more tenures
 - Endpoint URL: tenures/{tenureid}
+** Purpose: ** Note that JigsawRef will be stored within the LegacyReferences parameter
 
 **Request object:**
 
@@ -169,6 +170,7 @@ Purpose: Create one or more tenures
         "code": "INT",
         "description": "Introductory"
       },
+      "tenureSource": "string",
       "isTenanted": true,
       "terminated": {
         "isTerminated": false,
@@ -195,7 +197,17 @@ Purpose: Create one or more tenures
       "isMutualExchange": false,
       "informHousingBenefitsForChanges": false,
       "isSublet": false,
-      "subletEndDate": "string"
+      "subletEndDate": "string",
+      "fundingSource": "string",
+      "numberOfAdultsInProperty": 0,
+      "numberOfChildrenInProperty": 0,
+      "hasOffsiteStorage": false,
+      "furtherAccountInformation":{
+        "rentAccountRequired": false,
+        "noRentAccountReason": "string",
+        "rentLetterDate": "string",
+        "rentCardDate": "string"
+        } 
     }
 **PATCH Tenures:**
 
@@ -205,13 +217,36 @@ Endpoints URL: tenures/{tenureid}
 **Request object:**
 
     {
-      "startOfTenureDate": "string",
-      "endOfTenureDate": "string",
-      "tenureType": {
-        "code": "INT",
-        "description": "Introductory"
-      }
+    	"startOfTenureDate": "string",
+    	"endOfTenureDate": "string",
+      "paymentReference": "string",
+    	"tenureType": {
+    		"code": "INT",
+    		"description": "Introductory"
+    	},
+      "tenureSource": "string",
+    	"terminated": {
+    		"isTerminated": false,
+    		"reasonForTermination": "string"
+    	},
+      "legacyReferences": [
+        {
+          "name": "u_saff_tenancy",
+          "value": "123456"
+        }
+      ],      
+      "fundingSource": "string",
+      "numberOfAdultsInProperty": 0,
+      "numberOfChildrenInProperty": 0,
+      "hasOffsiteStorage": false,
+      "furtherAccountInformation":{
+        "rentAccountRequired": false,
+        "noRentAccountReason": "string",
+        "rentLetterDate": "string",
+        "rentCardDate": "string"
+        } 
     }
+
 **Request Headers**
 - ifMatch
 
