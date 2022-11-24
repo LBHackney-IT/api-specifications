@@ -72,7 +72,8 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 			"versionNumber": 0,
 			"fundingSource": null,
 			"costCentre": null,
-			"lhaArea": null
+			"lhaArea": null,
+			"lhaRate": null
 		},
 		{
 			"id": "91e9a95c-e9a7-4002-8c9e-d07f0cb27aff",
@@ -120,7 +121,8 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 			"versionNumber": 2,
 			"fundingSource": null,
 			"costCentre": null,
-			"lhaArea": null
+			"lhaArea": null,
+			"lhaRate": null
 		},
 		{
 			"id": "c9f62a09-32e6-468b-878f-d36183926113",
@@ -154,7 +156,8 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 			"versionNumber": 0,
 			"fundingSource": null,
 			"costCentre": null,
-			"lhaArea": null
+			"lhaArea": null,
+			"lhaRate": null
 		},
 		{
 			"id": "2cd25622-99c5-493c-a41d-7688a3d4ad48",
@@ -169,7 +172,8 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 			"versionNumber": 0,
 			"fundingSource": null,
 			"costCentre": null,
-			"lhaArea": null
+			"lhaArea": null,
+			"lhaRate": null
 		},
 		{
 			"id": "75985c70-c7fd-49d2-9e60-61c321abd8e2",
@@ -203,7 +207,8 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 			"versionNumber": 0,
 			"fundingSource": null,
 			"costCentre": null,
-			"lhaArea": null
+			"lhaArea": null,
+			"lhaRate": null
 		}
 	],
 	"paginationDetails": {
@@ -294,7 +299,12 @@ Create a new Contract
       "frequency": "Monthly",
       "amount": 1.3
     }
-  ]
+  ],
+  "versionNumber": null,
+  "fundingSource": null,
+  "costCentre": null,
+  "lhaArea": null,
+  "lhaRate": null
 }
 ```
 **Response:**
@@ -332,7 +342,8 @@ Create a new Contract
 	"versionNumber": 0,
 	"fundingSource": null,
 	"costCentre": null,
-	"lhaArea": null
+	"lhaArea": null,
+	"lhaRate": null
 }
 ```
 
@@ -349,6 +360,7 @@ Updates a Contract
 **Request object:**
 ```
 {
+  "contractType": "contract type"
   "startDate": "19-03-2020",
   "endDate": "29-05-2023",
   "renewalDate": "29-05-2023",
@@ -371,7 +383,11 @@ Updates a Contract
       "frequency": "Monthly",
       "amount": 50.3
     }
-  ]
+  ],
+  "fundingSource": null,
+  "costCentre": null,
+  "lhaArea": null,
+  "lhaRate": null
 }
 ```
 
