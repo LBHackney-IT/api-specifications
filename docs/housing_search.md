@@ -17,11 +17,11 @@ ElasticSearch will be updated by a Lambda function, holding business logic, that
 
 ## User Needs
 
-** As a service: **
+**As a service:**
 - I want the ability to view the details of the results returned in a search
 - So that I can easily look through the different results and make the correct selection and proceed to the profile that I was looking for
 
-** As a TA officer: **
+**As a TA officer:**
 - I want the ability to filter the details of the results returned in an asset search
 - So that I can easily look through the different results and find accommodation matching my requirements
 
@@ -33,7 +33,8 @@ Searching is achieved by providing `searchText` as a string parameter.
 1. Person - First name, Middle name, Last name
 2. Asset - Address line 1, Postcode, Asset type
 3. Tenure - Payment Reference, FullAddress of TenuredAsset , Household Members FullName  
-4. Transactions - Sender name, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount  
+4. Transactions - Sender name, Transaction Type, Payment Reference, Bank Account Number, Transaction Date, Transaction Amount
+5. Staff - first Name, last name, email
 
 ### Filtering
 
@@ -81,23 +82,35 @@ Allows to search on fields which do not exist only on platform APIs. It allows t
 5. Schema free
 6. High Scalable
 
-** Dependencies : **
-- By person
+**Dependencies :**
+
+**By person**
 - Person Information
 - Tenure
 - Asset Information
 - Transactions
 - Alerts
 
-** By Asset **
+**By Asset**
 - Asset Information
 - Tenure
 - Alert
 
-** By Tenure **
+**By Tenure**
 - Tenure
 - Person Information
 - Alert
+
+**By Staff**
+- Person Information
+- Contact Details
+- Patches & Areas
+
+**By Processes**
+- Processes Information
+- Tenure
+- Asset
+- Person
 
 ### Workshop 26/04/2022
 
