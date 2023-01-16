@@ -266,7 +266,7 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 	"fundingSource": null,
 	"costCentre": null,
 	"lhaArea": null,
-	"lhaRate": null.
+	"lhaRate": null,
 	"isActive": true,
 	"isVATRegistered": false,
 	"stage": 2
