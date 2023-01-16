@@ -18,3 +18,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.vs/api-specifications/FileContentIndex
+/.vs/api-specifications/v17/TestStore/0
+/.vs/slnx.sqlite
+/.vs/api-specifications/config/applicationhost.config

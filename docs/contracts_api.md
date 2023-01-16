@@ -48,6 +48,7 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 			"startDate": "2022-10-11T20:28:41.2041531Z",
 			"endDate": "2023-10-11T20:28:41.2041531Z",
 			"renewalDate": "2023-10-11T20:28:41.2041531Z",
+			"approvalDate": "2023-10-11T20:28:41.2041531Z",
 			"relatedPeople": [
 				{
 					"id": "00000000-0000-0000-0000-000000000000",
@@ -58,6 +59,7 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 					"isResponsible": true,
 					"description": "Landlord of the building",
 					"phone": null
+					"relatedId": "00000000-0000-0000-0000-000000000000",
 				}
 			],
 			"charges": [
@@ -73,7 +75,10 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 			"fundingSource": null,
 			"costCentre": null,
 			"lhaArea": null,
-			"lhaRate": null
+			"lhaRate": null,
+			"isActive": true,
+			"isVATRegistered": false,
+			"stage": 1
 		},
 		{
 			"id": "91e9a95c-e9a7-4002-8c9e-d07f0cb27aff",
@@ -232,6 +237,7 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 	"startDate": "2000-06-05T00:00:00Z",
 	"endDate": "2022-11-17T00:00:00Z",
 	"renewalDate": "2022-11-01T00:00:00Z",
+	"approvalDate": "2023-10-11T20:28:41.2041531Z",
 	"relatedPeople": [],
 	"charges": [
 		{
@@ -260,7 +266,10 @@ Gets one or more Contracts from the Contract table.  Requests can be made by spe
 	"fundingSource": null,
 	"costCentre": null,
 	"lhaArea": null,
-	"lhaRate": null
+	"lhaRate": null,
+	"isActive": true,
+	"isVATRegistered": false,
+	"stage": 2
 }
  ```
 
@@ -283,6 +292,7 @@ Create a new Contract
   "startDate": "2022-10-11T20:28:41.2041531Z",
   "endDate": "2023-10-11T20:28:41.2041531Z",
   "renewalDate": "2023-10-11T20:28:41.2041531Z",
+  "approvalDate": "2023-10-11T20:28:41.2041531Z",
   "relatedPeople": [
     {
       "type": "person",
@@ -290,7 +300,8 @@ Create a new Contract
       "name": "Bob Smith",
       "email": "john.smith@email.com",
       "isResponsible": true,
-      "description": "Landlord of the building"
+      "description": "Landlord of the building",
+	  "relatedId": "00000000-0000-0000-0000-000000000000"
     }
   ],
   "charges": [
@@ -304,7 +315,10 @@ Create a new Contract
   "fundingSource": null,
   "costCentre": null,
   "lhaArea": null,
-  "lhaRate": null
+  "lhaRate": null,
+  "isActive": true,
+  "isVATRegistered": false,
+  "stage": null
 }
 ```
 **Response:**
@@ -318,6 +332,7 @@ Create a new Contract
 	"startDate": "2022-10-11T20:28:41.2041531Z",
 	"endDate": "2023-10-11T20:28:41.2041531Z",
 	"renewalDate": "2023-10-11T20:28:41.2041531Z",
+    "approvalDate": "2023-10-11T20:28:41.2041531Z",
 	"relatedPeople": [
 		{
 			"id": "00000000-0000-0000-0000-000000000000",
@@ -327,7 +342,8 @@ Create a new Contract
 			"email": "john.smith@email.com",
 			"isResponsible": true,
 			"description": "Landlord of the building",
-			"phone": null
+			"phone": null,
+			"relatedId": "00000000-0000-0000-0000-000000000000"
 		}
 	],
 	"charges": [
@@ -343,7 +359,10 @@ Create a new Contract
 	"fundingSource": null,
 	"costCentre": null,
 	"lhaArea": null,
-	"lhaRate": null
+	"lhaRate": null,
+    "isActive": true,
+    "isVATRegistered": false,
+    "stage": null
 }
 ```
 
@@ -364,6 +383,7 @@ Updates a Contract
   "startDate": "19-03-2020",
   "endDate": "29-05-2023",
   "renewalDate": "29-05-2023",
+  "approvalDate": "2023-10-11T20:28:41.2041531Z",
   "relatedPeople": [
     {
       "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
@@ -372,7 +392,8 @@ Updates a Contract
       "name": "John Smith",
       "email": "john.smith@email.com",
       "isResponsible": true,
-      "description": "Landlord of the building"
+      "description": "Landlord of the building",
+	  "relatedId": "00000000-0000-0000-0000-000000000000"
     }
   ],
   "charges": [
@@ -387,7 +408,10 @@ Updates a Contract
   "fundingSource": null,
   "costCentre": null,
   "lhaArea": null,
-  "lhaRate": null
+  "lhaRate": null,
+  "isActive": true,
+  "isVATRegistered": true,
+  "stage": 2
 }
 ```
 
